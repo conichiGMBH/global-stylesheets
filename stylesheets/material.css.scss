@@ -21,8 +21,8 @@ conichi-checkbox {
     @include transition(all .4s cubic-bezier(.78,-1.22,.17,1.89));
     @include position(absolute, -.3em null null -2.1em);
     @include size(1.6em);
-    border: 2px solid $colorMainBlue;
-    background: $colorMainBlue;
+    border: 2px solid $colorPrimaryCorp;
+    background: $colorPrimaryCorp;
   }
 
   &:after {
@@ -101,7 +101,7 @@ conichi-datepicker {
         @include position(absolute, null 0 0 0);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
-        background: $colorMainBlue;
+        background: $colorPrimaryCorp;
         cursor: pointer;
         height: 4em;
 

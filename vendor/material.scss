@@ -107,7 +107,7 @@ mat-error {
   @include media($breakTabletPortrait) { left: auto }
 }
 
-.mat-primary .mat-option.mat-selected { color: $colorMainBlue }
+.mat-primary .mat-option.mat-selected { color: $colorPrimaryCorp }
 
 .mat-checkbox-frame { border-color: rgba(255, 255, 255, .5) }
 .mat-checkbox-ripple { display: none }
