@@ -12,7 +12,7 @@ conichi-checkbox {
     @include position(absolute, -.2em null null -2em);
     @include transform-origin(center center);
     @include size(1.4em);
-    border: 2px solid $colorHighlightBlue;
+    border: 2px solid $colorSecondaryCorp;
     border-radius: 5px;
     content: '';
   }
