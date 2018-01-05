@@ -1,0 +1,115 @@
+// Material form components
+
+conichi-checkbox {
+  @include position(relative, .5em null null 2.5em);
+  text-transform: uppercase;
+  height: 2em;
+  cursor: pointer;
+  display: block;
+
+  &:before {
+    @include transition(all .4s cubic-bezier(.78,-1.22,.17,1.89));
+    @include position(absolute, -.2em null null -2em);
+    @include transform-origin(center center);
+    @include size(1.4em);
+    border: 2px solid $colorHighlightBlue;
+    border-radius: 5px;
+    content: '';
+  }
+
+  &.checked:before {
+    @include transition(all .4s cubic-bezier(.78,-1.22,.17,1.89));
+    @include position(absolute, -.3em null null -2.1em);
+    @include size(1.6em);
+    border: 2px solid $colorMainBlue;
+    background: $colorMainBlue;
+  }
+
+  &:after {
+    @include transition(all .4s cubic-bezier(.78,-1.22,.17,1.89));
+    @include position(absolute, .05em null null -1.8em);
+    @include size(1.5em);
+    opacity: 0;
+    content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxNHB4IiBoZWlnaHQ9IjEycHgiIHZpZXdCb3g9IjAgMCAxNCAxMiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5ub3VuXzEzMDg0MjdfY2M8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4gICAgICAgIDxnIGlkPSJub3VuXzEzMDg0MjdfY2MiIGZpbGwtcnVsZT0ibm9uemVybyIgZmlsbD0iI0ZGRkZGRiI+ICAgICAgICAgICAgPHBhdGggZD0iTTIuMTgyODgwOSw1LjgzMTA1NDExIEMxLjY2MDU4OTU4LDUuMzM4MzY2MjMgMC44NDAyNTA2MTUsNS4zNjQ5OTMwNCAwLjM1MDYwMjUzNSw1Ljg5MDUyNjggQy0wLjEzOTA0NTU0Niw2LjQxNjA2MDU3IC0wLjExMjU4MzAyMiw3LjI0MTQ5MjMgMC40MDk3MDgyOTUsNy43MzQxODAxOCBMNC41NTc4Mzc1NSwxMS42NDcxOTQgQzUuMTE0NDc5NTIsMTIuMTcyMjg1NSA1Ljk5OTIxMjU0LDEyLjEwMjQzNzMgNi40Njc2NTM1MiwxMS40OTY0MTY5IEwxMy43MjY4Nzk3LDIuMTA1MTgzODcgQzE0LjE2NjQxMjksMS41MzY1NjE0NiAxNC4wNjQ2MDk1LDAuNzE3MDc3NzY4IDEzLjQ5OTQ5NTMsMC4yNzQ4MTU4NTcgQzEyLjkzNDM4MTIsLTAuMTY3NDQ2MDU1IDEyLjExOTk1MzYsLTAuMDY1MDEwNjA2OSAxMS42ODA0MjA0LDAuNTAzNjExODU5IEw1LjI5MzkzOTIxLDguNzY1Nzc3OTcgTDIuMTgyODgwOSw1LjgzMTA1NDExIFoiIGlkPSJTaGFwZSI+PC9wYXRoPiAgICAgICAgPC9nPiAgICA8L2c+PC9zdmc+);
+  }
+
+  &.checked:after {
+    @include transition(all .4s cubic-bezier(.78,-1.22,.17,1.89));
+    opacity: 1;
+  }
+}
+
+conichi-datepicker {
+  .input-container {
+    position: relative;
+    cursor: pointer;
+    
+    .calendar {
+      @include position(absolute, null .1em 1.4em null);
+      @include size(1.2em);
+    } 
+  }
+
+  .datepicker-overlay {
+    @include position(fixed, 0 0 0 0);
+    background: rgba(0, 0, 0, .5);
+    z-index: 9;
+
+    .datepicker-box {
+      @include position(absolute, 50% 50% null null);
+      width: 50%;
+      margin: -5em -25% 0 0;
+      background: $colorOffWhite;
+      border-radius: 5px;
+      padding: 1.5em 1.5em 6em;
+
+      h3 { color: $colorDarkGrey }
+
+      .date-container {
+        display: flex;
+        margin: 1em 0;
+      }
+
+      .select-container {
+        position: relative;
+        margin-top: 2em;
+        border: 1px solid #ccc;
+        float: left;
+        border-radius: 3px;
+        background-color: $colorOffWhite;
+        background: $colorOffWhite no-repeat 90% 50%;
+        flex: 1;
+        margin-right: 1em;
+
+        label { @include position(absolute, -1.8em null null null) }
+
+        select {
+          @include appearance(none);
+          width: 100%;
+          border: none;
+          box-shadow: none;
+          background-color: transparent;
+          background-image: none;
+          padding: .5em .8em .6em;
+          font-size: 1em;
+
+          &:focus { outline: none }
+        }
+      }
+
+      .confirm {
+        @include position(absolute, null 0 0 0);
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        background: $colorMainBlue;
+        cursor: pointer;
+        height: 4em;
+
+        h2 {
+          text-transform: uppercase;
+          margin-top: 1.1em;
+        }
+      }
+    }
+  }
+}
