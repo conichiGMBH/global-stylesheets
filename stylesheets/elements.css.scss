@@ -48,23 +48,6 @@ img {
   width: 100%;
 }
 
-a.button {
-  &:link,
-  &:visited,
-  &:hover,
-  &:active,
-  &:focus {
-    display: table;
-    padding: .8em 1.5em;
-    margin: 2em 0;
-    background: $colorSecondaryCorp;
-    border-radius: 5px;
-    color: $colorOffWhite;
-    font-weight: 100;
-    text-transform: uppercase;
-  }
-}
-
 .spinner {
   position: relative;
   display: inline-block;
