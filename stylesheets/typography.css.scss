@@ -1,10 +1,10 @@
 // Type settings, font styles, etc
 // Styleguide 1.0.
 
-@include font-face('Gotham', './assets/sass/globals/fonts/Gotham-Book');
-@include font-face('GothamLight', './assets/sass/globals/fonts/Gotham-Light');
-@include font-face('GothamBold', './assets/sass/globals/fonts/Gotham-Bold');
-@include font-face('GothamBlack', './assets/sass/globals/fonts/Gotham-Black');
+@include font-face('Gotham', './assets/sass/global-stylesheets/fonts/Gotham-Book');
+@include font-face('GothamLight', './assets/sass/global-stylesheets/fonts/Gotham-Light');
+@include font-face('GothamBold', './assets/sass/global-stylesheets/fonts/Gotham-Bold');
+@include font-face('GothamBlack', './assets/sass/global-stylesheets/fonts/Gotham-Black');
 
 $fontFamilyRegular: Gotham, Helvetica, sans-serif;
 $fontFamilyLight: GothamLight, Helvetica, sans-serif;
