@@ -47,7 +47,9 @@
   text-transform: uppercase;
   cursor: pointer;
   min-width: 10em;
-  display: block;
+  display: inline-block;
+  max-width: 25em;
+  width: 100%;
 
   &:hover,
   &:active,
@@ -56,9 +58,9 @@
     background: rgba(93, 149, 218, .7);
     color: $colorOffWhite;
   }
-  
+
   &.pull-right { float: right }
-  
+
   &.smaller { min-width: 5em }
 
   &.outline {
