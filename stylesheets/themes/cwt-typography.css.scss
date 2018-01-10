@@ -1,0 +1,95 @@
+// Type settings, font styles, etc
+// Styleguide 1.0.
+
+$fontFamilyBody: Arial, Helvetica, sans-serif;
+$fontFamilyDisplay: Arial, Helvetica, sans-serif;
+$fontFamilyBold: Arial, Helvetica, sans-serif;
+$fontFamilyBlack: Arial, Helvetica, sans-serif;
+
+body {
+  @include font-feature-settings("kern");
+  font-family: $fontFamilyDisplay;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 1.3em;
+  color: $colorOffWhite;
+  text-rendering: optimizeLegibility;
+}
+
+//-------------------------------------
+// Headlines
+//-------------------------------------
+
+h1, h2, h3, h4 {
+  font-family: $fontFamilyDisplay;
+  font-weight: 100;
+  line-height: 1;
+  margin: 0;
+}
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $colorOffWhite;
+
+    &:hover { color: $colorLightBlue }
+  }
+}
+
+h1 {
+  font-family: $fontFamilyBold;
+  letter-spacing: 1px;
+  font-size: 2.5em;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1em 0;
+
+  @include media($breakTabletPortrait) { font-size: 2.5em }
+  @include media($breakTabletLandscape) { font-size: 2em }
+}
+
+h2 {
+  font-size: 1.3em;
+  text-align: center;
+  color: $colorOffWhite;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-family: $fontFamilyBold;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0;
+}
+
+
+//-------------------------------------
+// Copy semantics
+//-------------------------------------
+
+small {
+  font-size: em(11);
+  display: inline-block;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  color: darken($colorLightGrey, 20%);
+  font-weight: 100;
+}
+
+strong { font-family: $fontFamilyBold }
+
+p {
+  margin: 1.1em 0;
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+figure { margin: 0 }
