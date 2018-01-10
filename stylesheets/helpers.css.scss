@@ -55,8 +55,8 @@
   &:active,
   &:focus {
     @include transition(all .2s cubic-bezier(.4, .0, .2, 1));
-    background: rgba(93, 149, 218, .7);
-    color: $colorOffWhite;
+    background: rgba($colorPrimaryCorp, .9);
+    color: $colorOffWhite !important;
   }
 
   &.pull-right { float: right }
