@@ -61,7 +61,7 @@
 
   &.pull-right { float: right }
 
-  &.smaller { max-width: 10em }
+  &.smaller { width: auto }
 
   &.outline {
     border: 1px solid $colorOffWhite;
