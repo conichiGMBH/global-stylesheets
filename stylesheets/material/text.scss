@@ -4,26 +4,26 @@ conichi-text {
     padding: 15px 0 20px;
 
     input {
-      font-size: 14px;
-      padding-bottom: 3px;
+      font-size: 1em;
       color: $colorOffWhite;
       display: block;
       border: none;
       border-bottom: 1px solid $colorOffWhite;
-      background-color: transparent;
+      background: transparent;
 
       &:focus {
         outline: none;
-        border-bottom: 1px solid transparent;
+        border-bottom: 1px solid $colorOffWhite;
+        background: transparent;
       }
 
-      &:valid ~ label { color: $colorSecondaryCorp }
-      &:focus ~ label { color: $colorOffWhite }
+      &:valid ~ label,
+      &:focus ~ label { color: $colorSecondaryCorp }
 
       &:focus ~ label,
       &:valid ~ label {
-        bottom: 3.7em;
-        font-size: 12px;
+        bottom: 3.1em;
+        font-size: .9em;
       }
     }
 
@@ -35,24 +35,14 @@ conichi-text {
     }
 
     .bar {
-      position: relative;
-      display: block;
-
-      &:before,
-      &:after {
-        @include position(absolute, null null 1px null);
-        @include transition(all 1.2s ease);
-        @include size(0 2px);
-        content: '';
-        background: $colorPrimaryCorp; 
-      }
-
-      &:before { left: 50% }
-      &:after { right: 50% }
+      @include position(absolute, null null 20px null);
+      @include transition(all 5s ease);
+      @include size(0 1px);
+      content: '';
+      background: $colorPrimaryCorp;
     }
 
-    input:focus ~ .bar:before,
-    input:focus ~ .bar:after { width: 50% }
+    input:focus ~ .bar { @include size(100% 1px) }
 
     .view-password {
       @include position(absolute, null 0 1.3em null);
