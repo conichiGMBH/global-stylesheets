@@ -1,0 +1,63 @@
+conichi-text {
+  .group { 
+    position: relative;
+    padding: 15px 0 20px;
+
+    input {
+      font-size: 14px;
+      padding-bottom: 3px;
+      color: $colorOffWhite;
+      display: block;
+      border: none;
+      border-bottom: 1px solid $colorOffWhite;
+      background-color: transparent;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid transparent;
+      }
+
+      &:valid ~ label { color: $colorSecondaryCorp }
+      &:focus ~ label { color: $colorOffWhite }
+
+      &:focus ~ label,
+      &:valid ~ label {
+        bottom: 3.7em;
+        font-size: 12px;
+      }
+    }
+
+    label {
+      @include position(absolute, null null 1.5em 0);
+      @include transition(all 0.2s ease);
+      color: $colorOffWhite; 
+      pointer-events: none;
+    }
+
+    .bar {
+      position: relative;
+      display: block;
+
+      &:before,
+      &:after {
+        @include position(absolute, null null 1px null);
+        @include transition(all 1.2s ease);
+        @include size(0 2px);
+        content: '';
+        background: $colorPrimaryCorp; 
+      }
+
+      &:before { left: 50% }
+      &:after { right: 50% }
+    }
+
+    input:focus ~ .bar:before,
+    input:focus ~ .bar:after { width: 50% }
+
+    .view-password {
+      @include position(absolute, null 0 1.3em null);
+      @include size(1.8em);
+      cursor: pointer;
+    }
+  }
+}
