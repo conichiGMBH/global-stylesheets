@@ -1,7 +1,7 @@
 conichi-text {
   .group { 
     position: relative;
-    padding: 15px 0 20px;
+    padding: 13px 0 20px;
 
     input {
       font-size: 1em;
@@ -22,13 +22,13 @@ conichi-text {
 
       &:focus ~ label,
       &:valid ~ label {
-        bottom: 3.1em;
-        font-size: .9em;
+        bottom: 3.3em;
+        font-size: .8em;
       }
     }
 
     label {
-      @include position(absolute, null null 1.5em 0);
+      @include position(absolute, null null 1.35em 0);
       @include transition(all 0.2s ease);
       color: $colorOffWhite; 
       pointer-events: none;
