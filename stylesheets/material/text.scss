@@ -37,15 +37,15 @@ conichi-text {
     .bar {
       @include position(absolute, null null 20px null);
       @include transition(all 5s ease);
-      @include size(0 2px);
+      @include size(0 1px);
       content: '';
       background: $colorPrimaryCorp;
     }
 
-    input:focus ~ .bar { @include size(100% 2px) }
+    input:focus ~ .bar { @include size(100% 1px) }
 
     .view-password {
-      @include position(absolute, null 0 1.3em null);
+      @include position(absolute, null 0 1em null);
       @include size(1.8em);
       cursor: pointer;
     }
