@@ -1,14 +1,14 @@
 // Type settings, font styles, etc
 // Styleguide 1.0.
 
-$fontFamilyBody: Arial, Helvetica, sans-serif;
-$fontFamilyDisplay: Arial, Helvetica, sans-serif;
+$fontFamilyLight: Arial, Helvetica, sans-serif;
+$fontFamilyRegular: Arial, Helvetica, sans-serif;
 $fontFamilyBold: Arial, Helvetica, sans-serif;
 $fontFamilyBlack: Arial, Helvetica, sans-serif;
 
 body {
   @include font-feature-settings("kern");
-  font-family: $fontFamilyDisplay;
+  font-family: $fontFamilyRegular;
   font-weight: 100;
   font-size: 14px;
   line-height: 1.3em;
@@ -21,7 +21,7 @@ body {
 //-------------------------------------
 
 h1, h2, h3, h4 {
-  font-family: $fontFamilyDisplay;
+  font-family: $fontFamilyRegular;
   font-weight: 100;
   line-height: 1;
   margin: 0;
@@ -35,7 +35,7 @@ a {
   &:focus {
     color: $colorOffWhite;
 
-    &:hover { color: $colorLightBlue }
+    &:hover { color: $colorSecondaryCorp }
   }
 }
 
