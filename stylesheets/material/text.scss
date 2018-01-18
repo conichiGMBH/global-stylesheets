@@ -10,10 +10,11 @@ conichi-text {
       border: none;
       border-bottom: 1px solid $colorOffWhite;
       background: transparent;
+      padding-bottom: 1px;
 
       &:focus {
         outline: none;
-        border-bottom: 1px solid $colorOffWhite;
+        border-bottom: 2px solid $colorOffWhite;
         background: transparent;
       }
 
@@ -22,13 +23,13 @@ conichi-text {
 
       &:focus ~ label,
       &:valid ~ label {
-        bottom: 3.3em;
+        bottom: 3.4em;
         font-size: .8em;
       }
     }
 
     label {
-      @include position(absolute, null null 1.35em 0);
+      @include position(absolute, null null 1.45em 0);
       @include transition(all 0.2s ease);
       color: $colorOffWhite; 
       pointer-events: none;
