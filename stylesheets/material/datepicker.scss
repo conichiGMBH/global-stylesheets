@@ -18,18 +18,25 @@ conichi-datepicker {
 
     .datepicker-box {
       @include position(fixed, 50% 50% null null);
-      width: 50%;
-      margin: -10em -25% 0 0;
+      width: 90%;
+      margin: -10em -45% 0 0;
       background: $colorOffWhite;
       border-radius: 5px;
       padding: 1.5em 1.5em 6em;
       z-index: 999;
 
+      @include media($breakTabletPortrait) {
+        width: 50%;
+        margin: -10em -25% 0 0;
+      }
+
       h3 { color: $colorDarkGrey }
 
       .date-container {
-        display: flex;
+        display: block;
         margin: 1em 0;
+
+        @include media($breakTabletPortrait) { display: flex }
       }
 
       .select-container {
@@ -42,6 +49,9 @@ conichi-datepicker {
         background: #fbfbfb no-repeat 90% 50%;
         flex: 1;
         margin-right: 1em;
+        width: 100%;
+        
+        @include media($breakTabletPortrait) { width: auto }
 
         label { @include position(absolute, -1.8em null null null) }
 
