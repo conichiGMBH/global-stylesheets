@@ -14,7 +14,7 @@ conichi-text {
 
       &:focus {
         outline: none;
-        border-bottom: 2px solid $colorOffWhite;
+        border-bottom: 1px solid $colorOffWhite;
         background: transparent;
       }
 
@@ -39,7 +39,6 @@ conichi-text {
       @include position(absolute, null null 20px null);
       @include transition(all 5s ease);
       @include size(0 1px);
-      content: '';
       background: $colorPrimaryCorp;
     }
 
