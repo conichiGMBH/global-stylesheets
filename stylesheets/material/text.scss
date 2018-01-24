@@ -36,7 +36,7 @@ conichi-text {
     }
 
     .bar {
-      @include position(absolute, null null 20px null);
+      @include position(absolute, null null 20px 0);
       @include transition(all 5s ease);
       @include size(0 1px);
       background: $colorPrimaryCorp;
