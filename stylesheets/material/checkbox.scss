@@ -17,14 +17,19 @@ conichi-checkbox-group {
       content: '';
     }
 
-    &.checked:before {
-      border: 2px solid $colorPrimaryCorp;
-      background: $colorPrimaryCorp;
+    &.checked {
+      img { display: block }
+
+      &:before {
+        border: 2px solid $colorPrimaryCorp;
+        background: $colorPrimaryCorp;
+      }
     }
-    
+
     img {
       @include position(absolute, 0 null null -1.88em);
       @include size(1.2em);
+      display: none;
     }
   }
 }
