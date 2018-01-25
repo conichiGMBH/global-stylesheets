@@ -2,8 +2,8 @@ conichi-checkbox,
 conichi-checkbox-group {
   .checkbox {
     @include position(relative, 0 null null 2.5em);
+    @include size(2em);
     text-transform: uppercase;
-    height: 2em;
     cursor: pointer;
     display: block;
 
