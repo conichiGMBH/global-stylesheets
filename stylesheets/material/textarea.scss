@@ -1,0 +1,48 @@
+conichi-textarea {
+  .group { 
+    position: relative;
+    padding: 13px 0 20px;
+
+    textarea {
+      font-size: 1em;
+      color: $colorOffWhite;
+      display: block;
+      border: none;
+      border-bottom: 1px solid $colorOffWhite;
+      background: transparent;
+      padding: 1em 0 1px;
+      max-height: 8em;
+
+      &:focus {
+        outline: none;
+        border-bottom: 1px solid $colorOffWhite;
+        background: transparent;
+      }
+
+      &:valid ~ label,
+      &:focus ~ label { color: $colorSecondaryCorp }
+
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -.2em;
+        font-size: .8em;
+      }
+    }
+
+    label {
+      @include position(absolute, 1.5em null null 0);
+      @include transition(all 0.2s ease);
+      color: $colorOffWhite; 
+      pointer-events: none;
+    }
+
+    .bar {
+      @include position(absolute, null null 20px 0);
+      @include transition(all 5s ease);
+      @include size(0 1px);
+      background: $colorPrimaryCorp;
+    }
+
+    textarea:focus ~ .bar { @include size(100% 1px) }
+  }
+}
