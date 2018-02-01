@@ -2,6 +2,8 @@ conichi-select {
   .container {
     position: relative;
     cursor: pointer;
+    
+    input { cursor: pointer }
 
     .dropdown-arrow { @include position(absolute, null .2em 1.7em null) }
 
@@ -33,5 +35,4 @@ conichi-select {
       }
     }
   }
-
 }
