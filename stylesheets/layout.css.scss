@@ -36,20 +36,19 @@ body {
   &:after { clear: both }
 }
 
-.loading-screen {
-  @include transition(opacity .2s ease-in-out .7s);
-  @include position(fixed, 15em 48% 0 48%);
-  opacity: 0;
+app-root + .loading-screen {
+  @include transition(opacity .2s ease-in-out .6s);
+  @include position(fixed, 0 0 0 0);
+  background: $colorBackground;
   pointer-events: none;
-}
-
-.loading {
-  .spinner { margin: 5em 42% 0 }
-
-  p {
-    text-align: center;
-    color: white;
+  z-index: 9999999999999;
+  opacity: 0;
+  
+  img {
+    @include position(absolute, 50% 50% null null);
+    @include size(10em auto);
+    margin: -4em -5em 0 0;
   }
 }
 
-my-app:empty + .loading-screen { opacity: 1 }
+app-root:empty + .loading-screen { opacity: 1 }
