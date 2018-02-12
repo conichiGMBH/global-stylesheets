@@ -1,0 +1,64 @@
+conichi-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .5);
+  z-index: 99999999;
+
+  modal-content {
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    max-width: 40em;
+    width: 40%;
+    margin: 0 auto;
+    background: $colorOffWhite;
+    border: 1px solid $colorDarkGrey;
+    color: $colorDarkGrey;
+    border-radius: 5px;
+    z-index: 999999999;
+    padding: 2em 2em 6em;
+
+    h1, h2, h3, p {
+      color: $colorDarkGrey;
+      text-align: left;
+    }
+  }
+
+  modal-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    .label {
+      background: $colorPrimaryCorp;
+      height: 3em;
+      padding: 1.1em;
+    }
+
+    .prompt {
+      display: flex;
+      
+      .label {
+        width: 50%;
+        flex: 1;
+        
+        &:first-child {
+          background: $colorLightGrey;
+          color: $colorMediumGrey;
+        }
+      }
+    }
+  }
+}
