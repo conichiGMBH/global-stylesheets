@@ -28,6 +28,18 @@ conichi-text {
       }
     }
 
+    .mask-container {
+      @include position(absolute, .9em null null null);
+      background: $colorBackground;
+      pointer-events: none;
+
+      .input-mask span {
+        opacity: .5;
+
+        &.char { opacity: 1 }
+      }
+    }
+
     label {
       @include position(absolute, null null 1.45em 0);
       @include transition(all 0.2s ease);
