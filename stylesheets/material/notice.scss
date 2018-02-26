@@ -5,6 +5,7 @@ conichi-notice {
     background: $colorSuccessGreen;
     border-radius: 2px;
     padding: 1em 1.5em;
+    margin: 2em 0 3em;
 
     .notice-icon {
       @include size(1.5em);
