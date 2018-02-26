@@ -35,22 +35,35 @@ conichi-modal {
     border-bottom-left-radius: 3px;
     border-bottom-right-radius: 3px;
 
-    .label {
+    .confirm-label {
       background: $colorPrimaryCorp;
       height: 3em;
       padding: 1.1em;
     }
 
     .prompt {
-      display: flex;
-      
-      .label {
-        width: 50%;
-        flex: 1;
-        
-        &:first-child {
-          background: $colorLightGrey;
-          color: $colorMediumGrey;
+      background: $colorSoftBlue;
+      border-top: 1px solid $colorLightGrey;
+      height: 3.5em;
+      padding: .75em 1em;
+
+      .button {
+        padding: 9px 20px 8px;
+        font-size: .8em;
+        min-width: 8em;
+        border-radius: 3px;
+
+        &.confirm { float: right }
+
+        &.cancel {
+          float: left;
+          border: 1px solid $colorPrimaryCorp;
+          color: $colorPrimaryCorp;
+
+          &:hover {
+            color: $colorPrimaryCorp;
+            background: rgba($colorPrimaryCorp, .1)
+          }
         }
       }
     }
