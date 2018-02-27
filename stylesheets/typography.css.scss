@@ -69,7 +69,8 @@ h2 {
 h3 {
   font-size: 1.3em;
   font-family: $fontFamilyBold;
-  text-transform: capitalize;
+  
+  &::first-letter { text-transform: uppercase }
 }
 
 h4 {
