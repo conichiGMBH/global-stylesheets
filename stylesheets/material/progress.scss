@@ -1,10 +1,8 @@
-conichi-progress {
-  display: block;
-  
+conichi-progress {  
   ul {
     counter-reset: step;
     width: fit-content;
-    margin: 0 auto;
+    margin: 2em auto 0;
 
     li {
       position: relative;
