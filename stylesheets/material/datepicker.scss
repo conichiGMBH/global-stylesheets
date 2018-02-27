@@ -30,7 +30,10 @@ conichi-datepicker {
         margin: -10em -25% 0 0;
       }
 
-      h3 { color: $colorDarkGrey }
+      .title {
+        color: $colorDarkGrey;
+        text-align: left;
+      }
 
       .date-container {
         display: block;
