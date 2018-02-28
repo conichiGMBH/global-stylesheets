@@ -1,6 +1,7 @@
 conichi-select-button {
   .select-button-container {
     position: relative;
+    display: inline-block;
 
     .button {
       position: relative;
@@ -8,13 +9,13 @@ conichi-select-button {
       background: $colorOffWhite;
       border: 1px solid $colorPrimaryCorp;
       color: $colorPrimaryCorp;
-      padding: .7em 3.6em .5em 1.5em;
+      padding: .6em 3.6em .5em 1.5em;
       z-index: 9999;
 
       &:after {
         @include position(absolute, 0 0 0 null);
         border-left: 1px solid $colorPrimaryCorp;
-        padding: .7em .8em 0;
+        padding: .55em .8em 0;
         content: '▾';
       }
 
@@ -25,7 +26,7 @@ conichi-select-button {
     }
 
     .select-button-dropdown {
-      @include position(absolute, 2.3em 1px null 1px);
+      @include position(absolute, 2.2em 1px null 1px);
       border: 1px solid $colorSoftBlue;
       background: $colorOffWhite;
       padding-top: .5em;
