@@ -29,7 +29,7 @@ conichi-text {
     }
 
     .mask-container {
-      @include position(absolute, .9em null null null);
+      @include position(absolute, .8em null null null);
       background: $colorBackground;
       pointer-events: none;
 
