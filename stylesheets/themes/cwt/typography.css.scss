@@ -35,7 +35,7 @@ a {
   &:focus {
     color: $colorOffWhite;
 
-    &:hover { color: $colorSecondaryCorp }
+    &:hover { color: darken($colorOffWhite, 10%) }
   }
 }
 
