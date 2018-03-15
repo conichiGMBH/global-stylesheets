@@ -27,12 +27,12 @@ body {
 
 .half {
   @include span-columns(12 of 12);
-  
+
   @include media($breakTabletLandscape) {
     @include span-columns(6 of 12);
     @include omega(2n);
   }
-  
+
   &:after { clear: both }
 }
 
@@ -43,7 +43,7 @@ app-root + .loading-screen {
   pointer-events: none;
   z-index: 9999999999999;
   opacity: 0;
-  
+
   img {
     @include position(absolute, 50% 50% null null);
     @include size(10em auto);
@@ -52,3 +52,7 @@ app-root + .loading-screen {
 }
 
 app-root:empty + .loading-screen { opacity: 1 }
+
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+  app-root + .loading-screen { display: none }
+}
