@@ -9,9 +9,9 @@ conichi-datepicker {
     } 
   }
 
-  conichi-modal modal-content {
+  conichi-modal modal-container {
     width: 30em;
-    padding: 5em 2em 2em;
+    padding-top: 3em;
 
     h2 {
       @include position(absolute, 0 0 null 0);
