@@ -3,20 +3,25 @@ conichi-modal {
   background: rgba(0, 0, 0, .5);
   z-index: 99999999;
 
-  modal-content {
-    @include position(fixed, 50% 50% null null);
+  modal-container {
+    @include position(absolute, 50% 50% null null);
     transform: translate(50%, -50%);
-    max-width: 40em;
-    width: 90%;
-    margin: 0 auto;
+    @include size(90% auto);
     background: $colorOffWhite;
     border: 1px solid $colorDarkGrey;
     color: $colorDarkGrey;
     border-radius: 5px;
     z-index: 999999999;
-    padding: 2em 2em 6em;
+    max-width: 40em;
+    max-height: 90%;
+    overflow: scroll;
     
-    @include media($breakTabletLandscape) { width: 40% }
+    @include media($breakTabletLandscape) { @include size(40% auto) }
+  }
+
+  modal-content {
+    display: block;
+    padding: 2em 2em 1em;
 
     h1, h2, h3, p {
       color: $colorDarkGrey;
@@ -25,10 +30,7 @@ conichi-modal {
   }
 
   modal-footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    @include position(sticky, null 0 0 0);
     cursor: pointer;
     text-transform: uppercase;
     text-align: center;
