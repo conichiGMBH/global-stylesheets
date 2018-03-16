@@ -11,6 +11,8 @@ conichi-text {
       border-bottom: 1px solid $colorOffWhite;
       background: transparent;
       padding-bottom: 1px;
+      
+      &:invalid { box-shadow: none }
 
       &:focus {
         outline: none;
