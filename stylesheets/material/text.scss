@@ -14,6 +14,7 @@ conichi-text {
       
       &:invalid { box-shadow: none }
 
+      &:active,
       &:focus {
         outline: none;
         border-bottom: 1px solid $colorOffWhite;
@@ -21,9 +22,11 @@ conichi-text {
       }
 
       &:valid ~ label,
+      &:active ~ label,
       &:focus ~ label { color: $colorSecondaryCorp }
 
       &:focus ~ label,
+      &:active ~ label,
       &:valid ~ label {
         bottom: 3.4em;
         font-size: .8em;
