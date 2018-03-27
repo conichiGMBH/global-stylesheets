@@ -14,6 +14,7 @@ conichi-text {
       
       &:invalid { box-shadow: none }
 
+      &:valid,
       &:active,
       &:focus {
         outline: none;
