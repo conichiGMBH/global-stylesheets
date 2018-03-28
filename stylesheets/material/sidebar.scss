@@ -12,32 +12,29 @@ conichi-sidebar {
     overflow-y: scroll;
     padding-bottom: 4em;
   }
-
-  & ~ conichi-sidebar-content { margin-left: 0 }
+  
+  .toggle {
+    @include position(absolute, 2em -3em null null);
+    @include size(1.2em);
+    content: url('./assets/svgs/menu-line.svg');
+    cursor: pointer;
+    display: block;
+    
+    @include media($breakTabletLandscape) { display: none }
+  }
 
   &[collapsed] {
-    .toggle { display: block }
+    .toggle { display: block !important }
+    & ~ conichi-sidebar-content { margin-left: 0 }
   }
 
   &.open {
     @include position(fixed, 0 null 0 0);
-
-    & ~ conichi-sidebar-content { margin-left: 22em }
-    &.toggle { display: block }
-  }
-
-  .toggle {
-    @include position(absolute, 3em -3em null null);
-    @include size(1.2em);
-    content: url('./assets/svgs/menu-line.svg');
-    cursor: pointer;
-    display: none;
-  }
-
-  .logo {
-    width: 10em;
-    margin: 2em auto 0;
-    padding: 2em 0;
+    
+    .toggle {
+      display: block;
+      @include media($breakTabletLandscape) { display: none }
+    }
   }
 
   conichi-sidebar-header {
@@ -92,6 +89,9 @@ conichi-sidebar-content {
   background: $colorBackground;
   overflow-y: scroll;
   padding-bottom: 5em;
+  margin-left: 0;
+  
+  @include media($breakTabletLandscape) { margin-left: 22em }
 }
 
 conichi-sidebar-user {
