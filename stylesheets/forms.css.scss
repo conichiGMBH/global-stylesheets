@@ -44,7 +44,7 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   background-color: $colorBackground !important;
-  -webkit-box-shadow: 0 0 0px 1000px $colorBackground inset;
+  -webkit-box-shadow: 0 0 0px 1000px $colorBackground inset !important;
   -webkit-text-fill-color: $colorOffWhite !important;
   color: $colorOffWhite !important;
 }

@@ -14,7 +14,7 @@ conichi-sidebar {
   }
   
   .toggle {
-    @include position(absolute, 2em -3em null null);
+    @include position(absolute, 2.5em -3em null null);
     @include size(1.2em);
     content: url('./assets/svgs/menu-line.svg');
     cursor: pointer;
