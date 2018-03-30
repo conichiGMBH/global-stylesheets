@@ -15,15 +15,18 @@ conichi-text {
       &:invalid { box-shadow: none }
 
       &:valid,
-      &:active {
+      &:active,
+      &:focus {
         outline: none;
         border-bottom: 1px solid $colorOffWhite;
         background: transparent;
       }
 
       &:valid ~ label,
-      &:active ~ label { color: $colorSecondaryCorp }
+      &:active ~ label,
+      &:focus ~ label { color: $colorSecondaryCorp }
 
+      &:focus ~ label,
       &:active ~ label,
       &:valid ~ label {
         bottom: 3.4em;
