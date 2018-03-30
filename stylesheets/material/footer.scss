@@ -1,0 +1,18 @@
+conichi-footer {
+  @include position(absolute, null 0 0 0);
+  border-top: 1px solid $colorDarkBlue;
+  height: 5em;
+  
+  img {
+    @include size(auto 2em);
+    margin-top: 1.5em;
+    float: left;
+  }
+  
+  .copyright {
+    float: right;
+    margin-top: 2.3em;
+    font-size: .9em;
+    color: $colorSecondaryCorp;
+  }
+}
