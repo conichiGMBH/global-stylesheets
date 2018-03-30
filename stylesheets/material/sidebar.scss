@@ -1,6 +1,6 @@
 conichi-sidebar {
   @include position(fixed, 0 null 0 -22em);
-  @include transition(all .5s ease-in-out);
+  @include transition(all .3s ease-in-out);
   border-right: 1px solid #57616b;
   background: $colorBackground;
   width: 22em;
@@ -14,9 +14,12 @@ conichi-sidebar {
   }
   
   .toggle {
-    @include position(absolute, 2.5em -3em null null);
-    @include size(1.2em);
-    content: url('./assets/svgs/menu-line.svg');
+    @include position(absolute, 2.3em -3em null null);
+    @include size(1.5em);
+    background: url('./assets/svgs/menu-line.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     cursor: pointer;
     display: block;
     
@@ -85,7 +88,7 @@ conichi-sidebar {
 
 conichi-sidebar-content {
   @include position(absolute, 0 0 0 0);
-  @include transition(all .5s ease-in-out);
+  @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;
   padding-bottom: 5em;
