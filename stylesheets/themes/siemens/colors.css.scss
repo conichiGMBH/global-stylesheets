@@ -2,6 +2,7 @@
 // Styleguide 1.0
 
 $colorBackground: #505A64;
+$colorBackgroundDarkened: darken($colorBackground, 5%);
 
 $colorPrimaryCorp: #009999;
 $colorSecondaryCorp: #BECDD7;
