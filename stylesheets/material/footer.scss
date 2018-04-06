@@ -1,5 +1,5 @@
 conichi-footer {
-  @include position(absolute, null 0 0 0);
+  @include position(fixed, null 0 0 0);
   border-top: 1px solid $colorPrimaryCorp;
   background: $colorBackgroundDarkened;
   height: 5em;

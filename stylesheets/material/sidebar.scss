@@ -91,7 +91,7 @@ conichi-sidebar-content {
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;
-  padding-bottom: 5em;
+  padding-bottom: 10em;
   margin-left: 0;
   
   @include media($breakTabletLandscape) { margin-left: 22em }
