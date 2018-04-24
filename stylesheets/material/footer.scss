@@ -5,15 +5,22 @@ conichi-footer {
   height: 5em;
   
   img {
-    @include size(auto 2em);
-    margin-top: 1.5em;
+    @include size(auto 1.8em);
+    margin-top: 1.6em;
     float: left;
+    
+    @include media($breakTabletLandscape) {
+      @include size(auto 2em);
+      margin-top: 1.5em;
+    }
   }
   
   .copyright {
     float: right;
     margin-top: 2.3em;
-    font-size: .9em;
+    font-size: .8em;
     color: $colorSecondaryCorp;
+    
+    @include media($breakTabletLandscape) { font-size: .9em }
   }
 }
