@@ -46,6 +46,7 @@ app-root + .loading-screen {
 
   img {
     @include position(absolute, 50% 50% null null);
+    animation: grow 10s  linear 10ms infinite;
     @include size(15em auto);
     margin: -4em -5em 0 0;
   }
@@ -55,4 +56,9 @@ app-root:empty + .loading-screen { opacity: 1 }
 
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
   app-root + .loading-screen { display: none }
+}
+
+@keyframes grow{
+  0% { transform:scale(1)}
+  50% { transform:scale(1.2)}
 }
