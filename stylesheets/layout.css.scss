@@ -46,7 +46,7 @@ app-root + .loading-screen {
 
   img {
     @include position(absolute, 50% 50% null null);
-    @include size(10em auto);
+    @include size(15em auto);
     margin: -4em -5em 0 0;
   }
 }
