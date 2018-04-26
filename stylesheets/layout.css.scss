@@ -48,7 +48,7 @@ app-root + .loading-screen {
     @include position(absolute, 50% 50% null null);
     animation: grow 10s  linear 10ms infinite;
     @include size(15em auto);
-    margin: -4em -5em 0 0;
+    margin: -4em -7.5em 0 0;
   }
 }
 
