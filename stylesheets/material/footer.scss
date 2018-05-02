@@ -1,18 +1,31 @@
 conichi-footer {
-  @include position(absolute, null 0 0 0);
-  border-top: 1px solid $colorDarkBlue;
-  height: 5em;
+  @include position(fixed, null 0 0 0);
+  border-top: 1px solid $colorPrimaryCorp;
+  background: $colorBackgroundDarkened;
+  height: 4em;
+  
+  @include media($breakTabletLandscape) { height: 5em }
   
   img {
-    @include size(auto 2em);
-    margin-top: 1.5em;
+    @include size(auto 1.8em);
+    margin-top: 1em;
     float: left;
+    
+    @include media($breakTabletLandscape) {
+      @include size(auto 2em);
+      margin-top: 1.5em;
+    }
   }
   
   .copyright {
     float: right;
-    margin-top: 2.3em;
-    font-size: .9em;
+    margin-top: 1.6em;
+    font-size: .8em;
     color: $colorSecondaryCorp;
+    
+    @include media($breakTabletLandscape) {
+      margin-top: 2.3em;
+      font-size: .9em;
+    }
   }
 }

@@ -2,7 +2,7 @@
 // Styleguide 1.0
 
 $colorBackground: #001634;
-$colorBackgroundShaded: tint($colorBackground, 2%);
+$colorBackgroundDarkened: darken($colorBackground, 1%);
 
 $colorPrimaryCorp: #5D95DA;
 $colorSecondaryCorp: #9FB0C3;

@@ -2,7 +2,7 @@ conichi-sidebar {
   @include position(fixed, 0 null 0 -22em);
   @include transition(all .3s ease-in-out);
   border-right: 1px solid #57616b;
-  background: $colorBackground;
+  background: $colorBackgroundDarkened;
   width: 22em;
   z-index: 9;
 
@@ -56,7 +56,7 @@ conichi-sidebar {
     display: block;
     padding: .8em 1.5em .6em;
     color: $colorSecondaryCorp;
-    border-bottom: 1px solid $colorSemiBlue;
+    border-bottom: 1px solid darken($colorSecondaryCorp, 15%);
     text-transform: uppercase;
     font-size: .9em;
     cursor: pointer;
@@ -75,10 +75,10 @@ conichi-sidebar {
 
   .footer {
     @include position(absolute, null 0 0 0);
-    -webkit-box-shadow: 0px -5px 5px 0px $colorBackground;
-    -moz-box-shadow: 0px -5px 5px 0px $colorBackground;
-    box-shadow: 0px -5px 5px 0px $colorBackground;
-    background: $colorBackground;
+    -webkit-box-shadow: 0px -5px 5px 0px $colorBackgroundDarkened;
+    -moz-box-shadow: 0px -5px 5px 0px $colorBackgroundDarkened;
+    box-shadow: 0px -5px 5px 0px $colorBackgroundDarkened;
+    background: $colorBackgroundDarkened;
     color: $colorSecondaryCorp;
     text-align: center;
     padding: .5em 1em;
@@ -87,11 +87,10 @@ conichi-sidebar {
 }
 
 conichi-sidebar-content {
-  @include position(absolute, 0 0 0 0);
+  @include position(absolute, 0 0 5em 0);
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;
-  padding-bottom: 5em;
   margin-left: 0;
   
   @include media($breakTabletLandscape) { margin-left: 22em }
