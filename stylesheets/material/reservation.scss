@@ -2,69 +2,50 @@ conichi-reservation {
   .reservation-container {
     position: relative;
     border: 1px solid $colorSecondaryCorp;
+    background: $colorBackgroundDarkened;
     margin-bottom: 3em;
     border-radius: 5px;
-    height: 12em;
-    padding: .5em;
-
-    @include media($breakTabletPortrait) { height: 9em }
-
-    span {
-      text-align: right;
-      color: $colorMediumBlue;
-    }
+    min-height: 9em;
+    padding: 1em 1.3em;
 
     .title {
-      @include position(absolute, .7em null null .5em);
       color: $colorSecondaryCorp;
+      font-family: $fontFamilyBold;
       text-align: left;
+      text-transform: uppercase;
+      margin-bottom: .5em;
+    }
+    
+    .venue {
+      p {
+        font-size: 1.1em !important;
+        text-transform: uppercase;
+      }
+      
+      span { color: $colorSecondaryCorp !important }
     }
 
     .details {
-      @include position(absolute, null null .5em 1em);
       width: calc(100% - 10em);
+      display: inline-block;
+      vertical-align: top;
 
-      .left {
-        width: 100%;
-        float: left;
-
-        @include media($breakTabletPortrait) { width: 50% }
-
-        .dates {
-          width: 47%;
-          float: left;
-
-          &:nth-child(2) { margin-left: 4% }
-
-          @include media($breakTabletPortrait) { width: 47% }
-        }
-      }
-
-      .right {
-        width: 100%;
-        float: left;
-        text-align: left;
-        margin-top: 1em;
-
-        @include media($breakTabletPortrait) {
-          width: 50%;
-          float: right;
-          text-align: right;
-          margin-top: 0;
-        }
-      }
+      .row { margin: .7em 0 }
 
       p {
         color: $colorOffWhite;
-        font-size: 1.2em;
+        font-size: 1em;
         margin: 0;
       }
+
+      span { color: $colorMediumBlue }
     }
 
     .venue-photo {
-      @include position(absolute, null .5em null null);
       @include size(8em);
       float: right;
+      display: inline-block;
+      vertical-align: top;
       background-size: cover;
       background-position: center;
       border-radius: 5px;
