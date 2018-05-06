@@ -102,7 +102,8 @@ conichi-sidebar-user {
   padding: 2em 0;
   
   .user-image {
-    @include size(4.5em);
+    @include size(5em);
+    margin: 0 auto;
     border: 4px solid $colorSecondaryCorp;
     border-radius: 50%;
     background-position: center;
@@ -110,10 +111,10 @@ conichi-sidebar-user {
   }
 
   .user-details {
-    margin-left: 1em;
-
+    text-align: center;
+    margin-top: 1em;
+    
     h2 {
-      text-align: left;
       color: $colorSecondaryCorp;
       font-size: 1.1em;
     }
