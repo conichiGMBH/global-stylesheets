@@ -3,18 +3,11 @@ conichi-footer {
   border-top: 1px solid $colorPrimaryCorp;
   background: $colorBackgroundDarkened;
   height: 4em;
-  
-  @include media($breakTabletLandscape) { height: 5em }
-  
+    
   img {
-    @include size(auto 1.8em);
+    @include size(auto 2em);
     margin-top: 1em;
     float: left;
-    
-    @include media($breakTabletLandscape) {
-      @include size(auto 2em);
-      margin-top: 1.5em;
-    }
   }
   
   .copyright {
@@ -22,10 +15,5 @@ conichi-footer {
     margin-top: 1.6em;
     font-size: .8em;
     color: $colorSecondaryCorp;
-    
-    @include media($breakTabletLandscape) {
-      margin-top: 2.3em;
-      font-size: .9em;
-    }
   }
 }
