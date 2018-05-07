@@ -15,10 +15,12 @@ body {
   @include font-feature-settings("kern");
   font-family: $fontFamilyLight;
   font-weight: 100;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.3em;
   color: $colorOffWhite;
   text-rendering: optimizeLegibility;
+  
+  @include media($breakLargescreen) { font-size: 14px }
 }
 
 //-------------------------------------
