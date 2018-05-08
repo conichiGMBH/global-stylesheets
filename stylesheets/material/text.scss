@@ -31,11 +31,12 @@ conichi-text {
       }
 
       &:active + label,
-      &:focus + label { color: $colorPrimaryCorp !important }
+      &:focus + label { color: $colorPrimaryCorp }
     }
 
     .mask-container {
       @include position(absolute, 1.4em null null null);
+      background: $colorBackground;
       pointer-events: none;
 
       .input-mask span {

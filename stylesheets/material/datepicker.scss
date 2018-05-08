@@ -4,7 +4,7 @@ conichi-datepicker {
     cursor: pointer;
 
     .calendar {
-      @include position(absolute, null .1em 1.8em null);
+      @include position(absolute, null .1em .5em null);
       @include size(1em);
     } 
   }
