@@ -5,10 +5,10 @@ conichi-select {
     
     input { cursor: pointer }
 
-    .dropdown-arrow { @include position(absolute, null .2em 1.7em null) }
+    .dropdown-arrow { @include position(absolute, null .2em .5em null) }
 
     .dropdown-box {
-      @include position(absolute, 2.2em 0 null 0);
+      @include position(absolute, 2.8em 0 null 0);
       background: $colorOffWhite;
       max-height: 20em;
       overflow-y: scroll;

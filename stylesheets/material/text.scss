@@ -1,9 +1,9 @@
 conichi-text {
   display: block;
   
-  .group { 
+  .group {
     position: relative;
-    margin: 1em 0;
+    margin: .5em 0;
     
     label {
       @include position(absolute, .2em null null 0);
@@ -16,7 +16,7 @@ conichi-text {
     input {
       @include transition(all 0.2s ease);
       background: $colorBackground;
-      color: $colorLightGrey; 
+      color: $colorMediumGrey; 
       font-size: 1em;
       padding: 1.5em 0 0;
       border: none;
@@ -25,6 +25,7 @@ conichi-text {
 
       &:active,
       &:focus {
+        color: $colorLightGrey;
         background: $colorBackground;
         border-bottom: 2px solid $colorPrimaryCorp;
       }
@@ -34,18 +35,20 @@ conichi-text {
     }
 
     .mask-container {
-      @include position(absolute, .8em null null null);
+      @include position(absolute, 1.4em null null null);
       pointer-events: none;
 
       .input-mask span {
+        position: relative;
         opacity: .5;
+        z-index: 9999;
 
         &.char { opacity: 1 }
       }
     }
 
     .view-password {
-      @include position(absolute, null 0 1em null);
+      @include position(absolute, null 0 0 null);
       @include size(1.8em);
       cursor: pointer;
     }
