@@ -87,7 +87,7 @@ conichi-sidebar {
 }
 
 conichi-sidebar-content {
-  @include position(absolute, 0 0 5em 0);
+  @include position(absolute, 0 0 4em 0);
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;

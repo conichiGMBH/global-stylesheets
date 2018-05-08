@@ -1,41 +1,40 @@
 conichi-text {
+  display: block;
+  
   .group { 
     position: relative;
-    padding: 1em 0 1.5em;
+    margin: 1em 0;
+    
+    label {
+      @include position(absolute, .2em null null 0);
+      @include transition(all 0.2s ease);
+      font-size: .8em;
+      color: $colorSemiBlue; 
+      pointer-events: none;
+    }
 
     input {
+      @include transition(all 0.2s ease);
+      background: $colorBackground;
+      color: $colorLightGrey; 
       font-size: 1em;
-      color: $colorOffWhite;
-      display: block;
+      padding: 1.5em 0 0;
       border: none;
-      border-bottom: 1px solid $colorOffWhite;
-      background: transparent;
-      
-      &:invalid { box-shadow: none }
+      border-bottom: 2px solid $colorSemiBlue;
+      outline: none;
 
-      &:valid,
       &:active,
       &:focus {
-        outline: none;
-        border-bottom: 1px solid $colorOffWhite;
-        background: transparent;
+        background: $colorBackground;
+        border-bottom: 2px solid $colorPrimaryCorp;
       }
 
-      &:valid ~ label,
-      &:active ~ label,
-      &:focus ~ label { color: $colorSecondaryCorp }
-
-      &:focus ~ label,
-      &:active ~ label,
-      &:valid ~ label {
-        bottom: 3.4em;
-        font-size: .8em;
-      }
+      &:active + label,
+      &:focus + label { color: $colorPrimaryCorp !important }
     }
 
     .mask-container {
       @include position(absolute, .8em null null null);
-      background: $colorBackground;
       pointer-events: none;
 
       .input-mask span {
@@ -44,22 +43,6 @@ conichi-text {
         &.char { opacity: 1 }
       }
     }
-
-    label {
-      @include position(absolute, null null 1.45em 0);
-      @include transition(all 0.2s ease);
-      color: $colorOffWhite; 
-      pointer-events: none;
-    }
-
-    .bar {
-      @include position(absolute, null null 1.5em 0);
-      @include transition(all 5s ease);
-      @include size(0 1px);
-      background: $colorPrimaryCorp;
-    }
-
-    input:focus ~ .bar { @include size(100% 1px) }
 
     .view-password {
       @include position(absolute, null 0 1em null);
