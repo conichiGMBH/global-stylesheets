@@ -18,5 +18,7 @@ conichi-footer {
     text-align: center;
     font-size: .8em;
     color: $colorSecondaryCorp;
+    
+    &.right { text-align: right }
   }
 }
