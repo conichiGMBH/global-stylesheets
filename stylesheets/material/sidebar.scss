@@ -10,6 +10,7 @@ conichi-sidebar {
     display: block;
     height: 100%;
     overflow-y: scroll;
+    -ms-overflow-style: scrollbar;
     padding-bottom: 4em;
   }
   
@@ -91,6 +92,7 @@ conichi-sidebar-content {
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;
+  -ms-overflow-style: scrollbar;
   margin-left: 0;
   
   @include media($breakTabletLandscape) { margin-left: 22em }

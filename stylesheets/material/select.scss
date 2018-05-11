@@ -15,6 +15,7 @@ conichi-select {
       background: $colorOffWhite;
       max-height: 20em;
       overflow-y: scroll;
+      -ms-overflow-style: scrollbar;
       z-index: 9;
 
       .option {

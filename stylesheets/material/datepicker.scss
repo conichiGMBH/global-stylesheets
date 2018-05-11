@@ -28,6 +28,7 @@ conichi-datepicker {
   .selection {
     max-height: 20em;
     overflow-y: scroll;
+    -ms-overflow-style: scrollbar;
 
     &.time {
       overflow-y: unset;

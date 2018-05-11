@@ -32,6 +32,7 @@ conichi-select-button {
       padding-top: .5em;
       max-height: 20em;
       overflow-y: scroll;
+      -ms-overflow-style: scrollbar;
       z-index: 9;
 
       .option {
