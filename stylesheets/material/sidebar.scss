@@ -88,14 +88,17 @@ conichi-sidebar {
 }
 
 conichi-sidebar-content {
-  @include position(absolute, 0 0 4em 0);
+  @include position(absolute, 0 0 0 0);
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
   overflow-y: scroll;
   -ms-overflow-style: scrollbar;
   margin-left: 0;
   
-  @include media($breakTabletLandscape) { margin-left: 22em }
+  @include media($breakTabletLandscape) {
+    @include position(absolute, 0 0 4em 0);
+    margin-left: 22em;
+  }
 }
 
 conichi-sidebar-user {

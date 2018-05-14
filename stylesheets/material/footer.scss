@@ -8,10 +8,15 @@ conichi-footer {
   @include media($breakTabletPortrait) { @include position(fixed, null 0 0 0) }
 
   .logo, .partner-logo {
-    @include size(auto 1.5em);
+    @include size(auto 1em);
     display: inline-block;
-    margin-top: 1.2em;
+    margin-top: 1.4em;
     float: left;
+    
+    @include media($breakTabletPortrait) {
+      @include size(auto 1.5em);
+      margin-top: 1.2em;
+    }
   }
 
   .partner-logo { float: right }
@@ -21,7 +26,7 @@ conichi-footer {
     text-align: center;
     font-size: .8em;
     color: $colorSecondaryCorp;
-
+    
     &.right { text-align: right }
   }
 }
