@@ -6,7 +6,7 @@
 // Global styles
 @import './stylesheets/themes/siemens/colors.css.scss';
 @import './stylesheets/grid_settings.css.scss';
-@import './stylesheets/typography.css.scss';
+@import './stylesheets//typography.css.scss';
 @import './stylesheets/layout.css.scss';
 @import './stylesheets/elements.css.scss';
 @import './stylesheets/forms.css.scss';
@@ -36,4 +36,5 @@
 @import './stylesheets/material/avatar.scss';
 
 // Custom styles
+@import './stylesheets/themes/light-theme.css.scss';
 @import './stylesheets/themes/siemens/custom.css.scss';

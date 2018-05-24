@@ -1,1 +1,20 @@
-conichi-footer { background: $colorOffWhite }
+conichi-footer,
+.page-heading { background: $colorOffWhite !important }
+
+conichi-sidebar {
+  background: $colorBackground !important;
+
+  .footer {
+    box-shadow: 0px -5px 5px 0px $colorBackground !important;
+    background: $colorBackground !important;
+  }
+}
+
+#profile .page-heading { background: transparent !important }
+
+#checkin-landing {
+  .signup {
+    border-top: 1px solid darken($colorLightGrey, 10%) !important;
+    .button { background: $colorSemiBlue !important }
+  }
+}
