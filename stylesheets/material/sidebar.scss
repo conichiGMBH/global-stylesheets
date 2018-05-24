@@ -1,7 +1,7 @@
 conichi-sidebar {
   @include position(fixed, 0 null 0 -22em);
   @include transition(all .3s ease-in-out);
-  border-right: 1px solid #57616b;
+  border-right: 1px solid darken($colorLightGrey, 15%);
   background: $colorBackgroundDarkened;
   width: 22em;
   z-index: 9;
@@ -39,6 +39,10 @@ conichi-sidebar {
       display: block;
       @include media($breakTabletLandscape) { display: none }
     }
+    
+    + conichi-sidebar-content conichi-footer {
+      @include media($breakTabletLandscape) { @include position(fixed, null 0 0 22em) }
+    }
   }
 
   conichi-sidebar-header {
@@ -57,7 +61,7 @@ conichi-sidebar {
     display: block;
     padding: .8em 1.5em .6em;
     color: $colorSecondaryCorp;
-    border-bottom: 1px solid darken($colorSecondaryCorp, 15%);
+    border-bottom: 1px solid darken($colorLightGrey, 15%);
     text-transform: uppercase;
     font-size: .9em;
     cursor: pointer;

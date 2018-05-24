@@ -1,0 +1,90 @@
+//-------------------------------------
+// Typography
+//-------------------------------------
+
+body { color: $colorDarkGrey }
+
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $colorDarkGrey;
+
+    &:hover { color: lighten($colorDarkGrey, 10%) }
+  }
+
+  &.button {
+    color: $colorOffWhite;
+
+    &:hover { color: darken($colorOffWhite, 10%) }
+  }
+}
+
+h2 { color: $colorDarkGrey }
+
+//-------------------------------------
+// Text inputs
+//-------------------------------------
+
+.loading-screen img { @include filter(invert(.5)) }
+
+//-------------------------------------
+// Text inputs
+//-------------------------------------
+
+conichi-text {
+  .group {
+    input {
+      border-bottom: 2px solid rgba($colorMediumGrey, .6);
+      -webkit-text-fill-color: $colorDarkGrey;
+      color: $colorDarkGrey;
+
+      &:hover { -webkit-text-fill-color: $colorDarkGrey }
+    }
+
+    label { color: $colorDarkGrey }
+
+    img { @include filter(invert(.5)) }
+  }
+}
+
+//-------------------------------------
+// Reservation box
+//-------------------------------------
+
+conichi-reservation {
+  .title { color: $colorSemiBlue !important }
+  .details p { color: $colorMediumGrey !important }
+  .reservation-container .venue span { color: $colorMediumGrey !important }
+}
+
+//-------------------------------------
+// Button outline
+//-------------------------------------
+
+.button.outline {
+  border: 1px solid $colorPrimaryCorp;
+  color: $colorPrimaryCorp;
+
+  &:hover,
+  &:active,
+  &:focus { color: $colorPrimaryCorp }
+}
+
+//-------------------------------------
+// Hamburger menu icon
+//-------------------------------------
+
+.toggle { @include filter(invert(.5)) }
+
+#profile, #settings {
+  .toggle { @include filter(none) }
+}
+
+//-------------------------------------
+// Other elements
+//-------------------------------------
+
+.instructions { color: $colorMediumGrey !important }

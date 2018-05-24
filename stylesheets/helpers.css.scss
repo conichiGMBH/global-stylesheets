@@ -35,7 +35,7 @@
 
 %button {
   @include transition(all .2s cubic-bezier(.4, .0, .2, 1));
-  font-family: $fontFamilyLight;
+  font-family: $fontFamilyRegular;
   font-size: 1em;
   border-radius: 20px;
   text-shadow: 0 1px 0px rgba(black, .2);
