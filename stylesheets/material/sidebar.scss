@@ -95,7 +95,6 @@ conichi-sidebar-content {
   @include position(absolute, 0 0 0 0);
   @include transition(all .3s ease-in-out);
   background: $colorBackground;
-  overflow-y: scroll;
   -ms-overflow-style: scrollbar;
   margin-left: 0;
   
