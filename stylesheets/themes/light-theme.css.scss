@@ -50,11 +50,39 @@ conichi-reservation {
 }
 
 //-------------------------------------
+// Sidebar
+//-------------------------------------
+conichi-sidebar {
+  background: #565D64 !important;
+  border-right: 1px solid $colorMediumGrey !important;
+
+  a {
+    color: $colorOffWhite !important;
+    
+    &:hover,
+    &.active {
+      background: lighten(#565D64, 2%);
+      color: lighten($colorPrimaryCorp, 10%) !important;
+    }
+  }
+
+  .footer {
+    box-shadow: 0px -5px 5px 0px #565D64 !important;
+    background: #565D64 !important;
+    color: $colorOffWhite !important;
+  }
+}
+
+conichi-sidebar-user {
+  .user-details h2 { color: $colorOffWhite !important }
+}
+
+//-------------------------------------
 // Login divider
 //-------------------------------------
 .divider {
   color: $colorMediumGrey !important;
-  
+
   span:before, span:after { border-top: 1px solid $colorMediumGrey !important }
 }
 
@@ -82,7 +110,7 @@ conichi-reservation {
 //-------------------------------------
 // Checkout payment page
 //-------------------------------------
-#credit-cards {
+#credit-cards, #credit-cards-dashboard {
   .credit-card .no-card { color: $colorMediumGrey !important }
   .secure-payment img { @include filter(invert(.5)) }
 }

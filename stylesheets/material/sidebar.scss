@@ -5,6 +5,9 @@ conichi-sidebar {
   background: $colorBackgroundDarkened;
   width: 22em;
   z-index: 9;
+  -webkit-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.5);
+  -moz-box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.5);
+  box-shadow: 1px 0px 3px 0px rgba(0,0,0,0.5);
 
   conichi-sidebar-menu {
     display: block;
@@ -13,7 +16,7 @@ conichi-sidebar {
     -ms-overflow-style: scrollbar;
     padding-bottom: 4em;
   }
-  
+
   .toggle {
     @include position(absolute, 1.7em -3em null null);
     @include size(1.5em);
@@ -23,7 +26,7 @@ conichi-sidebar {
     background-repeat: no-repeat;
     cursor: pointer;
     display: block;
-    
+
     @include media($breakTabletLandscape) { display: none }
   }
 
@@ -34,12 +37,12 @@ conichi-sidebar {
 
   &.open {
     @include position(fixed, 0 null 0 0);
-    
+
     .toggle {
       display: block;
       @include media($breakTabletLandscape) { display: none }
     }
-    
+
     + conichi-sidebar-content conichi-footer {
       @include media($breakTabletLandscape) { @include position(fixed, null 0 0 22em) }
     }
@@ -97,7 +100,7 @@ conichi-sidebar-content {
   background: $colorBackground;
   -ms-overflow-style: scrollbar;
   margin-left: 0;
-  
+
   @include media($breakTabletLandscape) {
     @include position(absolute, 0 0 4em 0);
     margin-left: 22em;
@@ -108,7 +111,7 @@ conichi-sidebar-user {
   display: table;
   margin: 2em auto 0;
   padding: 2em 0;
-  
+
   .user-image {
     @include size(5em);
     margin: 0 auto;
@@ -121,7 +124,7 @@ conichi-sidebar-user {
   .user-details {
     text-align: center;
     margin-top: 1em;
-    
+
     h2 {
       color: $colorSecondaryCorp;
       font-size: 1.1em;
