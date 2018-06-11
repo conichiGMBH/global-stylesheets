@@ -5,20 +5,20 @@ body { color: $colorDarkGrey }
 
 a {
   &:link, &:visited, &:hover, &:active, &:focus {
-    color: $colorDarkGrey;
-    &:hover { color: lighten($colorDarkGrey, 10%) }
+    color: $colorDarkGrey !important;
+    &:hover { color: lighten($colorDarkGrey, 10%) !important }
   }
 
   &.button {
-    color: $colorOffWhite;
-    &:hover { color: darken($colorOffWhite, 10%) }
+    color: $colorOffWhite !important;
+    &:hover { color: darken($colorOffWhite, 10%) !important }
   }
 }
 
-h2 { color: $colorDarkGrey }
+h2 { color: $colorDarkGrey !important }
 
 //-------------------------------------
-// Text inputs
+// Loading screen
 //-------------------------------------
 .loading-screen img { @include filter(invert(.5)) }
 
@@ -28,14 +28,14 @@ h2 { color: $colorDarkGrey }
 conichi-text {
   .group {
     input {
-      border-bottom: 2px solid rgba($colorMediumGrey, .6);
-      -webkit-text-fill-color: $colorDarkGrey;
-      color: $colorDarkGrey;
+      border-bottom: 2px solid rgba($colorMediumGrey, .6) !important;
+      -webkit-text-fill-color: $colorDarkGrey !important;
+      color: $colorDarkGrey !important;
 
-      &:hover { -webkit-text-fill-color: $colorDarkGrey }
+      &:hover { -webkit-text-fill-color: $colorDarkGrey !important }
     }
 
-    label { color: $colorDarkGrey }
+    label { color: $colorDarkGrey !important }
     img { @include filter(invert(.5)) }
   }
 }
@@ -90,12 +90,12 @@ conichi-sidebar-user {
 // Button outline
 //-------------------------------------
 .button.outline {
-  border: 1px solid $colorPrimaryCorp;
-  color: $colorPrimaryCorp;
+  border: 1px solid $colorPrimaryCorp !important;
+  color: $colorPrimaryCorp !important;
 
   &:hover,
   &:active,
-  &:focus { color: $colorPrimaryCorp }
+  &:focus { color: $colorPrimaryCorp !important }
 }
 
 //-------------------------------------
