@@ -5,17 +5,17 @@ body { color: $colorDarkGrey }
 
 a {
   &:link, &:visited, &:hover, &:active, &:focus {
-    color: $colorDarkGrey !important;
-    &:hover { color: lighten($colorDarkGrey, 10%) !important }
+    color: $colorDarkGrey;
+    &:hover { color: lighten($colorDarkGrey, 10%)}
   }
 
   &.button {
-    color: $colorOffWhite !important;
-    &:hover { color: darken($colorOffWhite, 10%) !important }
+    color: $colorOffWhite;
+    &:hover { color: darken($colorOffWhite, 10%) }
   }
 }
 
-h2 { color: $colorDarkGrey !important }
+h2 { color: $colorDarkGrey }
 
 //-------------------------------------
 // Loading screen
@@ -57,11 +57,10 @@ conichi-sidebar {
   border-right: 1px solid $colorMediumGrey !important;
 
   a {
-    color: $colorOffWhite !important;
-    
-    &:hover,
-    &.active {
-      background: lighten(#565D64, 2%);
+    &:link, &:visited { color: $colorOffWhite !important }
+
+    &:hover, &.active {
+      background: lighten(#565D64, 2%) !important;
       color: lighten($colorPrimaryCorp, 10%) !important;
     }
   }
