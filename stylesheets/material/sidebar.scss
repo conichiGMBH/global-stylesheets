@@ -136,4 +136,13 @@ conichi-sidebar-user {
       font-size: .9em;
     }      
   }
+
+  .logout {
+    display: block;
+    color: $colorSecondaryCorp;
+    font-family: $fontFamilyLight;
+    font-size: .8em;
+    text-align: center;
+    cursor: pointer;
+  }
 }
