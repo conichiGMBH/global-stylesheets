@@ -41,6 +41,7 @@ conichi-text {
 
     .mask-container {
       @include position(absolute, 1.4em null null null);
+      background: $colorBackground;
       pointer-events: none;
 
       .input-mask span {
