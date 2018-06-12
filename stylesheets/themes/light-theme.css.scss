@@ -32,6 +32,19 @@ conichi-text {
       -webkit-text-fill-color: $colorDarkGrey !important;
       color: $colorDarkGrey !important;
 
+      &:active,
+      &:focus {
+        color: $colorLightGrey !important;
+        background: $colorBackground !important;
+        border-bottom: 2px solid $colorPrimaryCorp !important;
+      }
+
+      &:active + label,
+      &:focus + label { color: $colorPrimaryCorp !important }
+
+      &:active + .mask-container .input-mask .carat, { border-right: 1px solid $colorDarkGrey !important }
+      &:focus + .mask-container .input-mask .carat { border-right: 1px solid $colorDarkGrey !important }
+      
       &:hover { -webkit-text-fill-color: $colorDarkGrey !important }
     }
 
