@@ -125,6 +125,11 @@ conichi-sidebar-user {
 modal-container { border: 1px solid $colorLightGrey !important }
 
 //-------------------------------------
+// Form footer
+//-------------------------------------
+#app .form-footer { border-top: 2px solid $colorDarkGrey !important }
+
+//-------------------------------------
 // Other elements
 //-------------------------------------
 .instructions { color: $colorMediumGrey !important }
