@@ -34,7 +34,7 @@ conichi-text {
 
       &:active,
       &:focus {
-        color: $colorLightGrey !important;
+        color: lighten($colorDarkGrey, 5%) !important;
         background: $colorBackground !important;
         border-bottom: 2px solid $colorPrimaryCorp !important;
       }
