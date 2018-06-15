@@ -14,7 +14,7 @@ $fontFamilyBlack: GothamBlack, Helvetica, sans-serif;
 body {
   @include font-feature-settings("kern");
   font-family: $fontFamilyLight;
-  font-weight: 100;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.3em;
   color: $colorOffWhite;
