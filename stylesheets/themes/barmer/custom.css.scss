@@ -1,0 +1,13 @@
+conichi-footer,
+.page-heading { background: $colorOffWhite !important }
+
+#profile .page-heading { background: transparent !important }
+
+#checkin-landing {
+  .signup {
+    border-top: 1px solid darken($colorLightGrey, 10%) !important;
+    .button { background: $colorSemiBlue !important }
+  }
+}
+
+conichi-sidebar-user .logout { color: $colorLightGrey !important }
