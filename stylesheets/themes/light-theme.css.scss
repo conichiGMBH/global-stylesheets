@@ -120,6 +120,11 @@ conichi-sidebar-user {
 }
 
 //-------------------------------------
+// Select dropdown arrow
+//-------------------------------------
+conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
+
+//-------------------------------------
 // Checkout payment page
 //-------------------------------------
 #credit-cards, #credit-cards-dashboard {
