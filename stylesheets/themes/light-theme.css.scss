@@ -125,6 +125,11 @@ conichi-sidebar-user {
 conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
 
 //-------------------------------------
+// Edit Address Icon
+//-------------------------------------
+#checkout-address .address-box .edit { @include filter(invert(.5)) }
+
+//-------------------------------------
 // Checkout payment page
 //-------------------------------------
 #credit-cards, #credit-cards-dashboard {
