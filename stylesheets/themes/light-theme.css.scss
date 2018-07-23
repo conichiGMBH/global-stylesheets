@@ -130,6 +130,11 @@ conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
 #checkout-address .address-box .edit { @include filter(invert(.5)) }
 
 //-------------------------------------
+// Edit Credit Card icon
+//-------------------------------------
+#credit-cards .credit-card .action { @include filter(invert(.5)) }
+
+//-------------------------------------
 // Checkout payment page
 //-------------------------------------
 #credit-cards, #credit-cards-dashboard {
