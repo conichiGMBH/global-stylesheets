@@ -19,15 +19,21 @@ conichi-sidebar {
 
   .toggle {
     @include position(absolute, 1.7em -3em null null);
-    @include size(1.5em);
-    background: url('./assets/svgs/menu-line.svg');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    @include transition(all .7s ease);
     cursor: pointer;
     display: block;
 
     @include media($breakTabletLandscape) { display: none }
+
+    .bar {
+      @include transition(all .7s ease);
+      @include size(1.5em 2px);
+      display: block;
+      background: $colorOffWhite;
+      margin: 4px auto;
+    }
+
+    .middle { margin: 0 auto }
   }
 
   &[collapsed] {
@@ -41,6 +47,17 @@ conichi-sidebar {
     .toggle {
       display: block;
       @include media($breakTabletLandscape) { display: none }
+
+      .bar {
+        @include size(1.8em 3px);
+        background-color: $colorPrimaryCorp;
+      }
+
+      .top { @include transform(translateY(.58em) rotateZ(45deg)) }
+
+      .bottom { @include transform(translateY(-.58em) rotateZ(-45deg)) }
+
+      .middle { width: 0 }
     }
 
     + conichi-sidebar-content conichi-footer {
