@@ -53,7 +53,7 @@ conichi-sidebar {
         background-color: $colorPrimaryCorp;
       }
 
-      .top { @include transform(translateY(.58em) rotateZ(45deg)) }
+      .top { @include transform(translateY(.45em) rotateZ(45deg)) }
 
       .bottom { @include transform(translateY(-.58em) rotateZ(-45deg)) }
 
