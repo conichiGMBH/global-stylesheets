@@ -63,6 +63,15 @@ conichi-reservation {
 }
 
 //-------------------------------------
+// Select Container
+//-------------------------------------
+conichi-select .container {
+  border-bottom: 2px solid lighten($colorMediumGrey, 20%);
+  
+  label { color: $colorDarkGrey }
+}
+
+//-------------------------------------
 // Sidebar
 //-------------------------------------
 conichi-sidebar {
