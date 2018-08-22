@@ -113,11 +113,7 @@ conichi-sidebar-user {
 //-------------------------------------
 // Hamburger menu icon
 //-------------------------------------
-.toggle { @include filter(invert(.5)) }
-
-#profile, #settings {
-  .toggle { @include filter(none) }
-}
+conichi-sidebar .toggle .bar { background: $colorDarkGrey }
 
 //-------------------------------------
 // Select dropdown arrow
