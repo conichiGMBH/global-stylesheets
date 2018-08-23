@@ -153,11 +153,6 @@ conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
 #checkout-address .address-box { background: $colorBackgroundDarkened !important }
 
 //-------------------------------------
-// Modal box
-//-------------------------------------
-modal-container { border: 1px solid $colorLightGrey !important }
-
-//-------------------------------------
 // Form footer
 //-------------------------------------
 #app .form-footer { border-top: 2px solid $colorDarkGrey !important }

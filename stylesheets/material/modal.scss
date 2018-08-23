@@ -8,7 +8,6 @@ conichi-modal {
     transform: translate(50%, -50%);
     @include size(90% auto);
     background: $colorOffWhite;
-    border: 1px solid $colorDarkGrey;
     color: $colorDarkGrey;
     border-radius: 5px;
     z-index: 999999999;
