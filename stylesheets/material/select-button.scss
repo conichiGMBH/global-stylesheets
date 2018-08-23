@@ -28,6 +28,7 @@ conichi-select-button {
 
     .select-button-dropdown {
       @include position(absolute, 2.2em 1px null 1px);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .2);
       border: 1px solid $colorSoftBlue;
       background: $colorOffWhite;
       padding-top: .3em;
