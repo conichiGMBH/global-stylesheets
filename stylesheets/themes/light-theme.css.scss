@@ -2,7 +2,7 @@
 // Typography
 //-------------------------------------
 body { color: $colorDarkGrey }
-fa { color: blue !important }
+fa { color: $colorMediumGrey }
 
 a {
   &:link, &:visited, &:hover, &:active, &:focus {
@@ -50,7 +50,6 @@ conichi-text {
     }
 
     label { color: $colorDarkGrey !important }
-    img { @include filter(invert(.5)) }
   }
 }
 
@@ -130,16 +129,6 @@ conichi-sidebar .toggle .bar { background: $colorDarkGrey }
 // Select dropdown arrow
 //-------------------------------------
 conichi-select .container .dropdown-arrow { color: $colorMediumGrey }
-
-//-------------------------------------
-// Edit Address Icon
-//-------------------------------------
-#checkout-address .address-box .edit { @include filter(invert(.5)) }
-
-//-------------------------------------
-// Edit Credit Card icon
-//-------------------------------------
-#credit-cards .credit-card .action { @include filter(invert(.5)) }
 
 //-------------------------------------
 // Checkout payment page
