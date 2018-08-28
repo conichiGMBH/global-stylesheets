@@ -2,6 +2,7 @@
 // Typography
 //-------------------------------------
 body { color: $colorDarkGrey }
+fa { color: blue !important }
 
 a {
   &:link, &:visited, &:hover, &:active, &:focus {
@@ -128,7 +129,7 @@ conichi-sidebar .toggle .bar { background: $colorDarkGrey }
 //-------------------------------------
 // Select dropdown arrow
 //-------------------------------------
-conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
+conichi-select .container .dropdown-arrow { color: $colorMediumGrey }
 
 //-------------------------------------
 // Edit Address Icon
@@ -147,6 +148,11 @@ conichi-select .container .dropdown-arrow { @include filter(invert(.5)) }
   .credit-card .no-card { color: $colorMediumGrey !important }
   .secure-payment img { @include filter(invert(.5)) }
 }
+
+//-------------------------------------
+// Landing Smarthotel logo
+//-------------------------------------
+#temp-landing .smarthotel-logo { @include filter(invert(.5)) }
 
 //-------------------------------------
 // Checkout billing address
