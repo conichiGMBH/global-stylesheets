@@ -64,3 +64,6 @@ input[type=date] {
     background: linear-gradient(to bottom, transparent 95%, $colorPrimaryCorp 95%) no-repeat;
   }
 }
+
+input::-ms-clear,
+input::-ms-reveal { display: none }
