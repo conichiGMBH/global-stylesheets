@@ -59,7 +59,7 @@ conichi-text {
 
     .view-password {
       @include position(absolute, null 0 0 null);
-      @include size(1.8em);
+      @include size(1.2em 1.6em);
       cursor: pointer;
     }
   }
