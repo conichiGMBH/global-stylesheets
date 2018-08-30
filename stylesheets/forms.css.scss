@@ -54,7 +54,7 @@ input[type=email],
 input[type=url],
 input[type=tel],
 input[type=date] {
-  font-family: $fontFamilyLight;
+  font-weight: 100;
   border-bottom: 1px solid $colorOffWhite;
   padding: 0;
 
