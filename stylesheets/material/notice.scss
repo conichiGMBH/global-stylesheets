@@ -8,8 +8,8 @@ conichi-notice {
     margin: 2em 0 3em;
 
     .notice-icon {
-      @include size(1.5em);
       display: inline-block;
+      color: black;
     }
 
     p {
@@ -17,14 +17,14 @@ conichi-notice {
       vertical-align: top;
       width: calc(100% - 2em);
       color: black;
-      margin: 0;
-      padding: 0 .5em;
+      margin: .5em 0;
+      padding: 0 1em;
     }
 
     .close-icon {
       @include position(absolute, 1em 1em null null);
-      @include size(1em);
       cursor: pointer;
+      color: black;
     }
   }
 }
