@@ -1,25 +1,16 @@
 // Type settings, font styles, etc
 // Styleguide 1.0.
 
-@include font-face('Gotham', './assets/sass/global-stylesheets/fonts/Gotham-Book');
-@include font-face('GothamLight', './assets/sass/global-stylesheets/fonts/Gotham-Light');
-@include font-face('GothamBold', './assets/sass/global-stylesheets/fonts/Gotham-Bold');
-@include font-face('GothamBlack', './assets/sass/global-stylesheets/fonts/Gotham-Black');
-
-$fontFamilyRegular: Gotham, Helvetica, sans-serif;
-$fontFamilyLight: GothamLight, Helvetica, sans-serif;
-$fontFamilyBold: GothamBold, Helvetica, sans-serif;
-$fontFamilyBlack: GothamBlack, Helvetica, sans-serif;
 
 body {
   @include font-feature-settings("kern");
-  font-family: $fontFamilyLight;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3em;
   color: $colorOffWhite;
   text-rendering: optimizeLegibility;
-  
+
   @include media($breakTabletPortrait) { font-size: 12px }
   @include media($breakLargescreen) { font-size: 14px }
 }
@@ -29,7 +20,6 @@ body {
 //-------------------------------------
 
 h1, h2, h3, h4 {
-  font-family: $fontFamilyLight;
   font-weight: 100;
   line-height: 1;
   margin: 0;
@@ -48,9 +38,9 @@ a {
 }
 
 h1 {
-  font-family: $fontFamilyBold;
-  letter-spacing: 1px;
+  font-weight: bolder;
   font-size: 2em;
+  letter-spacing: 1px;
   line-height: 1.3;
   text-transform: uppercase;
   text-align: center;
@@ -64,15 +54,15 @@ h2 {
   font-size: 1.3em;
   text-align: center;
   color: $colorOffWhite;
-  
+
   &.faded { opacity: .5 }
   &.pull-left { text-align: left }
 }
 
 h3 {
+  font-weight: bolder;
   font-size: 1.3em;
-  font-family: $fontFamilyBold;
-  
+
   &::first-letter { text-transform: uppercase }
 }
 
@@ -98,7 +88,7 @@ small {
   font-weight: 100;
 }
 
-strong { font-family: $fontFamilyBold }
+strong { font-weight: bolder }
 
 p {
   margin: 1.1em 0;
