@@ -10,7 +10,7 @@ conichi-reservation {
     box-shadow: 0 2px 4px rgba(50, 50, 50, .1), 0 3px 6px rgba(100, 100, 100, .2);
 
     .title {
-      color: $colorSemiBlue;
+      color: $colorSecondaryCorp;
       font-weight: bolder;
       text-align: left;
       text-transform: uppercase;
@@ -23,7 +23,7 @@ conichi-reservation {
         text-transform: uppercase;
       }
       
-      span { color: $colorMediumGrey !important }
+      span { color: $colorSecondaryCorp !important }
     }
 
     .details {
@@ -34,7 +34,7 @@ conichi-reservation {
       .row { margin: .7em 0 }
 
       p {
-        color: $colorMediumGrey;
+        color: $colorOffWhite;
         font-size: 1em;
         margin: 0;
       }
