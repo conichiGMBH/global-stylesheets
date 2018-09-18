@@ -65,8 +65,8 @@
   &.smaller { width: auto }
 
   &.outline {
-    border: 1px solid $colorOffWhite;
-    color: $colorOffWhite;
+    border: 1px solid $colorPrimaryCorp;
+    color: $colorPrimaryCorp;
     background-color: rgba(255, 255, 255, 0);
 
     &:hover,
@@ -74,7 +74,6 @@
     &:focus {
       @include transition(all .2s cubic-bezier(.4, .0, .2, 1));
       background-color: rgba(255, 255, 255, 0.1);
-      color: $colorOffWhite;
     }
   }
 }
