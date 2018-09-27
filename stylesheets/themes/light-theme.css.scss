@@ -18,6 +18,21 @@ a {
 
 h2 { color: $colorDarkGrey }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus
+input:-webkit-autofill, 
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: $colorDarkGrey;
+  color: $colorDarkGrey;
+}
+
 //-------------------------------------
 // Loading screen
 //-------------------------------------
@@ -67,7 +82,7 @@ conichi-reservation {
 //-------------------------------------
 conichi-select .container,
 #credit-cards .form .disabled {
-  border-bottom: 2px solid rgba(43, 55, 68, 0.6) !important;
+  border-bottom: 2px solid rgba(137, 137, 137, 0.6) !important;
   
   label { color: $colorDarkGrey !important }
 }
