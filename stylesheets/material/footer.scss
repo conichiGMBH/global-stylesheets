@@ -3,9 +3,12 @@ conichi-footer {
   border-top: 1px solid $colorPrimaryCorp;
   background: $colorBackgroundDarkened;
   display: block;
-  height: 4em;
+  height: 5em;
 
-  @include media($breakTabletPortrait) { @include position(fixed, null 0 0 0) }
+  @include media($breakTabletPortrait) {
+    @include position(fixed, null 0 0 0);
+    height: 4em;
+  }
 
   .logo, .partner-logo {
     @include size(auto 1em);
@@ -22,10 +25,13 @@ conichi-footer {
   .partner-logo { float: right }
 
   .copyright {
-    @include position(relative, 1.8em null null null);
+    @include position(relative, 4em null null null);
     text-align: center;
     font-size: .8em;
     color: $colorSecondaryCorp;
+    white-space: nowrap;
+    
+    @include media($breakTabletPortrait) { @include position(relative, 1.8em null null null) }
     
     &.right { text-align: right }
   }

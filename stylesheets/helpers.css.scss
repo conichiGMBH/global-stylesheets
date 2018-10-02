@@ -46,11 +46,13 @@
   text-transform: uppercase;
   cursor: pointer;
   min-width: 10em;
-  display: inline-block;
-  max-width: 30em;
+  display: block;
   width: 100%;
   outline: none;
   font-weight: 400;
+  margin: .5em 0;
+
+  @include media($breakTabletPortrait) { display: inline-block }
 
   &:hover,
   &:active,
@@ -62,11 +64,11 @@
 
   &.pull-right { float: right }
 
-  &.smaller { width: auto }
+  &.smaller { @include media($breakTabletPortrait) { width: auto } }
 
   &.outline {
-    border: 1px solid $colorPrimaryCorp;
-    color: $colorPrimaryCorp;
+    border: 1px solid $colorOffWhite;
+    color: $colorOffWhite;
     background-color: rgba(255, 255, 255, 0);
 
     &:hover,
@@ -74,6 +76,7 @@
     &:focus {
       @include transition(all .2s cubic-bezier(.4, .0, .2, 1));
       background-color: rgba(255, 255, 255, 0.1);
+      color: $colorOffWhite;
     }
   }
 }

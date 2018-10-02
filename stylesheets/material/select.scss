@@ -3,13 +3,13 @@ conichi-select {
     position: relative;
     cursor: pointer;
     height: 3.4em;
-    border-bottom: 2px solid rgba(43, 55, 68, 0.6);
+    border-bottom: 2px solid $colorSoftBlue;
     
     label {
-      @include position(absolute, .2em null null 0);
+      @include position(absolute, .8em null null 0);
       @include transition(all 0.2s ease);
       font-size: .7em;
-      color: $colorDarkGrey; 
+      color: $colorSoftBlue; 
       pointer-events: none;
     }
     
@@ -30,7 +30,7 @@ conichi-select {
     
     .dropdown-arrow {
       @include position(absolute, null .2em .5em null);
-      color: $colorDarkGrey;
+      color: $colorSoftBlue;
     }
     
     &.active {
