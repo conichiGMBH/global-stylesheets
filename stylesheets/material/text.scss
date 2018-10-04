@@ -9,25 +9,25 @@ conichi-text {
       @include position(absolute, .2em null null 0);
       @include transition(all 0.2s ease);
       font-size: .7em;
-      color: $colorSoftBlue; 
+      color: $colorDarkGrey; 
       pointer-events: none;
     }
 
     input {
       @include transition(all 0.2s ease);
       background: transparent;
-      color: $colorMediumGrey; 
+      color: $colorDarkGrey; 
       font-size: 1em;
       padding: 1.5em 0 0;
       border: none;
-      border-bottom: 2px solid $colorSoftBlue;
+      border-bottom: 2px solid rgba($colorMediumGrey, .6);
       outline: none;
       
       &.masked::selection { background: transparent }
 
       &:active,
       &:focus {
-        color: $colorLightGrey;
+        color: lighten($colorDarkGrey, 5%);
         background: $colorBackground;
         border-bottom: 2px solid $colorPrimaryCorp;
       }
@@ -35,8 +35,8 @@ conichi-text {
       &:active + label,
       &:focus + label { color: $colorPrimaryCorp }
 
-      &:active + .mask-container .input-mask .carat, { border-right: 1px solid $colorOffWhite; }
-      &:focus + .mask-container .input-mask .carat { border-right: 1px solid $colorOffWhite; }
+      &:active + .mask-container .input-mask .carat, { border-right: 1px solid $colorDarkGrey; }
+      &:focus + .mask-container .input-mask .carat { border-right: 1px solid $colorDarkGrey; }
     }
 
     .mask-container {
