@@ -14,7 +14,7 @@ conichi-select {
     }
     
     input {
-      @include position(absolute, 0 0 -.2em 0);
+      @include position(absolute, 0 1000em -.2em 0);
       color: transparent;
       background: none;
       outline: none;

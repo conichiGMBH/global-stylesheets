@@ -43,8 +43,8 @@ select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
   background-color: $colorBackground;
   -webkit-box-shadow: 0 0 0px 1000px $colorBackground inset;
-  -webkit-text-fill-color: $colorOffWhite;
-  color: $colorOffWhite;
+  -webkit-text-fill-color: $colorDarkGrey;
+  color: $colorDarkGrey;
 }
 
 input[type=text],
