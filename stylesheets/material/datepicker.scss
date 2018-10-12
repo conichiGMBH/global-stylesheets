@@ -8,6 +8,8 @@ conichi-datepicker {
       @include size(1em);
     } 
   }
+  
+  .carat { display: none }
 
   conichi-modal modal-container {
     overflow: visible;
