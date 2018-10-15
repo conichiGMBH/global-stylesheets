@@ -19,6 +19,11 @@ conichi-footer {
       margin-top: 1.2em;
     }
   }
+  
+  .cwt-footer {
+    @include size(auto 2em);
+    @include media($breakTabletPortrait) { @include size(auto 2em) }
+  }
 
   .corporate-logo { float: right }
 
