@@ -20,7 +20,7 @@ conichi-footer {
     }
   }
   
-  .cwt-footer {
+  .cwt-footer .partner-logo {
     @include size(auto 2em);
     @include media($breakTabletPortrait) { @include size(auto 2em) }
   }
