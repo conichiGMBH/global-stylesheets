@@ -67,3 +67,8 @@ input[type=date] {
 
 input::-ms-clear,
 input::-ms-reveal { display: none }
+
+input:focus::-webkit-textfield-decoration-container {
+   visibility: hidden;
+   pointer-events: none;
+}
