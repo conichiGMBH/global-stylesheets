@@ -3,7 +3,7 @@ conichi-select {
     position: relative;
     cursor: pointer;
     height: 3.4em;
-    border-bottom: 2px solid rgba(43, 55, 68, 0.6);
+    border-bottom: 2px solid $colorDarkGrey;
     
     label {
       @include position(absolute, .8em null null 0);
@@ -21,8 +21,7 @@ conichi-select {
       border: none;
       cursor: pointer;
       text-indent: -100000em;
-      
-      &:focus { border-bottom: none }
+      height: 3.4em;
     }
     
     .display-value {
@@ -42,7 +41,7 @@ conichi-select {
     }
 
     .dropdown-box {
-      @include position(absolute, 3em 0 null 0);
+      @include position(absolute, 3.4em 0 null 0);
       box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .2);
       background: $colorOffWhite;
       max-height: 20em;
