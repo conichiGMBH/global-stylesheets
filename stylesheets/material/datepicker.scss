@@ -2,14 +2,28 @@ conichi-datepicker {
   .input-container {
     position: relative;
     cursor: pointer;
+    height: 3.4em;
+    border-bottom: 2px solid rgba(43, 55, 68, 0.6);
 
     .calendar {
       @include position(absolute, null .1em .6em null);
       @include size(1em);
-    } 
+    }
+
+    label {
+      @include position(absolute, .2em null null 0);
+      @include transition(all 0.2s ease);
+      font-size: .7em;
+      color: $colorDarkGrey; 
+      pointer-events: none;
+    }
+
+    .value {
+      @include position(absolute, 0 0 0 0);
+      text-transform: capitalize;
+      padding-top: 1.8em;
+    }
   }
-  
-  .carat { display: none }
 
   conichi-modal modal-container {
     overflow: visible;
@@ -25,7 +39,7 @@ conichi-datepicker {
       padding: 1em 0;
       margin-bottom: 2em;
       text-align: center;
-      
+
       h2 {
         color: $colorOffWhite;
         text-align: center;

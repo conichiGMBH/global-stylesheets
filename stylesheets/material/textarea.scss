@@ -11,7 +11,7 @@ conichi-textarea {
       color: $colorMediumGrey; 
       padding: 1.5em 0 0;
       border: none;
-      border-bottom: 2px solid $colorSoftBlue;
+      border-bottom: 2px solid $colorDarkGrey;
       outline: none;
       font-size: 1em;
       max-height: 8em;
@@ -31,7 +31,7 @@ conichi-textarea {
       @include position(absolute, .2em null null 0);
       @include transition(all 0.2s ease);
       font-size: .8em;
-      color: $colorSoftBlue; 
+      color: $colorMediumGrey; 
       pointer-events: none;
     }
   }

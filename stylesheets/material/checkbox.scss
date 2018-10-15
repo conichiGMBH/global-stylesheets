@@ -18,7 +18,10 @@ conichi-checkbox-group {
     }
 
     &.checked {
-      fa { display: block }
+      fa {
+        display: block;
+        color: $colorOffWhite;
+      }
 
       &:before {
         border: 2px solid $colorPrimaryCorp;
