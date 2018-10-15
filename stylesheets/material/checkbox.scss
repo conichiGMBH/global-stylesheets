@@ -12,7 +12,7 @@ conichi-checkbox-group {
       @include position (absolute, -.15em null null -2em);
       @include size(1.4em);
       transform-origin: center center;
-      border: 2px solid #9FB0C3;
+      border: 2px solid $colorGenericGrey;
       border-radius: 5px;
       content: '';
     }

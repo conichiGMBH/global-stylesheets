@@ -1,20 +1,19 @@
 conichi-reservation {
   .reservation-container {
     position: relative;
-    border: 1px solid $colorSecondaryCorp;
-    background: $colorBackgroundDarkened;
+    border: 1px solid $colorMediumGrey;
+    background: rgba(227,227, 227, .5);
     margin-bottom: 3em;
     border-radius: 5px;
     min-height: 10em;
     padding: 1em 1.3em;
-    box-shadow: 0 2px 4px rgba(50, 50, 50, .1), 0 3px 6px rgba(100, 100, 100, .2);
 
     .title {
       color: $colorMediumGrey;
       font-size: 1em;
       text-align: left;
       text-transform: uppercase;
-      margin-bottom: .5em;
+      margin-bottom: 1em;
     }
     
     .venue {
@@ -22,6 +21,8 @@ conichi-reservation {
         font-size: 1.1em !important;
         text-transform: uppercase;
         font-weight: bolder;
+        margin-bottom: .5em;
+        color: #797979 !important;
       }
       
       span { color: $colorMediumGrey !important }
@@ -40,7 +41,7 @@ conichi-reservation {
         margin: 0;
       }
 
-      span { color: $colorMediumGrey }
+      span { color: #797979 }
     }
 
     .venue-photo {

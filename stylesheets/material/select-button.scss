@@ -11,6 +11,8 @@ conichi-select-button {
       color: $colorPrimaryCorp;
       padding: .6em 3.6em .5em 1.5em;
       text-shadow: none;
+      font-weight: normal;
+      font-size: 1em;
       z-index: 9999;
 
       &:after {
