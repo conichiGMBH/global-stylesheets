@@ -21,6 +21,8 @@ conichi-select {
       border: none;
       cursor: pointer;
       text-indent: -100000em;
+      
+      &:focus { border-bottom: none }
     }
     
     .display-value {
