@@ -21,13 +21,13 @@ conichi-footer {
   }
   
   .cwt-footer .partner-logo {
-    @include size(auto 2em);
-    @include media($breakTabletPortrait) { @include size(auto 2em) }
+    @include size(auto 2.2em);
+    @include media($breakTabletPortrait) { @include size(auto 2.2em) }
   }
   
   .cwt-footer .corporate-logo {
-    @include size(auto 1.4em);
-    @include media($breakTabletPortrait) { @include size(auto 1.4em) }
+    @include size(auto 1.3em);
+    @include media($breakTabletPortrait) { @include size(auto 1.3em) }
   }
 
   .corporate-logo { float: right }
