@@ -3,7 +3,7 @@ conichi-datepicker {
     position: relative;
     cursor: pointer;
     height: 3.4em;
-    border-bottom: 2px solid rgba(43, 55, 68, 0.6);
+    border-bottom: 2px solid $colorDarkGrey;
 
     .calendar {
       @include position(absolute, null .1em .6em null);
@@ -11,10 +11,10 @@ conichi-datepicker {
     }
 
     label {
-      @include position(absolute, .2em null null 0);
+      @include position(absolute, .6em null null 0);
       @include transition(all 0.2s ease);
       font-size: .7em;
-      color: $colorDarkGrey; 
+      color: $colorMediumGrey; 
       pointer-events: none;
     }
 

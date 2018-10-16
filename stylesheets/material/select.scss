@@ -9,7 +9,7 @@ conichi-select {
       @include position(absolute, .8em null null 0);
       @include transition(all 0.2s ease);
       font-size: .7em;
-      color: $colorDarkGrey; 
+      color: $colorMediumGrey; 
       pointer-events: none;
     }
     
@@ -21,7 +21,7 @@ conichi-select {
       border: none;
       cursor: pointer;
       text-indent: -100000em;
-      height: 3.4em;
+      height: 4.5em;
     }
     
     .display-value {
