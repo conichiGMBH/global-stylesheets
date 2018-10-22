@@ -5,47 +5,54 @@ conichi-reservation {
     background: rgba(227,227, 227, .5);
     margin-bottom: 3em;
     border-radius: 5px;
-    min-height: 10em;
+    min-height: 8em;
     padding: 1em 1.3em;
 
-    .title {
-      color: $colorMediumGrey;
-      font-size: 1em;
-      text-align: left;
-      text-transform: uppercase;
-      margin-bottom: 1em;
-    }
-    
     .venue {
+      margin-bottom: .5em;
+
       p {
         font-size: 1.1em !important;
         text-transform: uppercase;
         font-weight: bolder;
-        margin-bottom: .5em;
+        margin: 0 0 .5em;
         color: #797979 !important;
       }
-      
+
       span { color: $colorMediumGrey !important }
     }
 
     .details {
-      width: calc(100% - 10em);
+      width: calc(100% - 8em);
       display: inline-block;
       vertical-align: top;
 
-      .row { margin: .7em 0 }
+      .column {
+        @include span-columns(12 of 12);
+        @include omega-reset(2n);
+        padding: 0;
+        
+        @include media($breakTabletPortrait) {
+          @include span-columns(6 of 12);
+          padding-right: 1em;
+        }
+      }
 
       p {
         color: lighten($colorMediumGrey, 10%);
         font-size: 1em;
         margin: 0;
-      }
 
-      span { color: #797979 }
+        span {
+          color: #797979;
+          float: right;
+          font-weight: bold;
+        }
+      }
     }
 
     .venue-photo {
-      @include size(8em);
+      @include size(6em);
       float: right;
       display: inline-block;
       vertical-align: top;
