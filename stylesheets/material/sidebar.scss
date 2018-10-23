@@ -60,7 +60,7 @@ conichi-sidebar {
       .middle { width: 0 }
     }
 
-    + conichi-sidebar-content conichi-footer {
+    + conichi-sidebar-content app-footer {
       @include media($breakTabletLandscape) { @include position(fixed, null 0 0 22em) }
     }
   }
