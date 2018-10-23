@@ -13,6 +13,7 @@ body {
 
   @include media($breakTabletPortrait) { font-size: 12px }
   @include media($breakLargescreen) { font-size: 14px }
+  @include media($breakLargeerScreen) { font-size: 18px }
 }
 
 //-------------------------------------
