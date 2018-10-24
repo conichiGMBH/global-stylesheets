@@ -7,23 +7,9 @@ body {
   padding: 0;
 }
 
-.screen-container {
-  max-width: 90em;
-  margin: 0 auto;
-  padding: 0 2.5em;
-}
-
-.outer-container {
-  max-width: 47em;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
-.inner-container {
-  max-width: 30em;
-  margin: 0 auto;
-  padding: 1.5em;
-}
+.screen-container { @extend %screen-container }
+.outer-container { @extend %outer-container }
+.inner-container { @extend %inner-container }
 
 .half {
   @include span-columns(12 of 12);

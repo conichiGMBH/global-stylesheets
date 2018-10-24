@@ -2,6 +2,28 @@
 // Styleguide 1.0.
 
 //-------------------------------------
+// Layout
+//-------------------------------------
+
+%screen-container {
+  max-width: 90em;
+  margin: 0 auto;
+  padding: 0 2.5em;
+}
+
+%outer-container {
+  max-width: 47em;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+%inner-container {
+  max-width: 30em;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+//-------------------------------------
 // Display
 //-------------------------------------
 

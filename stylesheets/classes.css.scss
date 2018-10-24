@@ -8,9 +8,6 @@
 
 .center { text-align: center }
 
-.align {
-  vertical-align: middle;
-  display: inline-block;
-}
+.align { @extend %inline }
 
 .raised { box-shadow: 0 2px 4px rgba(50, 50, 50, 0.1), 0 3px 6px rgba(100, 100, 100, 0.2) }
