@@ -83,7 +83,11 @@
     color: $colorOffWhite;
   }
 
-  &.pull-right { float: right }
+  &.pull-right {
+    float: none;
+    
+    @include media($breakTabletPortrait) { float: right }
+  }
 
   &.smaller { @include media($breakTabletPortrait) { width: auto } }
 
