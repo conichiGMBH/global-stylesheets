@@ -33,8 +33,8 @@ conichi-reservation {
         padding: 0;
         
         @include media($breakTabletPortrait) {
-          @include span-columns(6 of 12);
-          padding-right: 1em;
+          @include span-columns(4 of 12);
+          padding-right: 0.5em;
         }
       }
 
@@ -44,8 +44,9 @@ conichi-reservation {
         margin: 0;
 
         span {
+          float: none;
+          display: block;
           color: #797979;
-          float: right;
           font-weight: bold;
         }
       }
