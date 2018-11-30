@@ -1,0 +1,37 @@
+conichi-switch {
+  display: inline-block;
+  .switch-container {
+    @include size(4em 2.5em);
+    @include transition-delay(0.1s);
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    border: 1px solid $colorLightGrey;
+    background: $colorOffWhite;
+    border-radius: 1.25em;
+    cursor: pointer;
+
+    .switch {
+      @include position(absolute, 0 1.5em 0 0);
+      @include transition(all .2s ease-in-out);
+      @include size(2.4em);
+      background: $colorOffWhite;
+      border: 1px solid $colorLightGrey;
+      border-radius: 50%;
+      -webkit-box-shadow: -3px 3px 10px -5px $colorMediumGrey;
+      -moz-box-shadow: -3px 3px 10px -5px $colorMediumGrey;
+      box-shadow: -3px 3px 10px -5px $colorMediumGrey;
+    }
+
+    &.on {
+      background: $colorPrimaryCorp;
+      .switch { @include position(absolute, 0 0 0 1.5em); }
+    }
+  }
+
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 1em;
+  }
+}
