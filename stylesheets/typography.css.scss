@@ -3,17 +3,17 @@
 
 
 body {
-  @include font-feature-settings("kern");
   font-family: Arial, Helvetica, sans-serif;
+  font-feature-settings: "kern";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.3em;
   color: $colorGenericGrey;
   text-rendering: optimizeLegibility;
 
-  @include media($breakTabletPortrait) { font-size: 12px }
-  @include media($breakLargescreen) { font-size: 14px }
-  @include media($breakLargeerScreen) { font-size: 18px }
+  @include grid-media($breakTabletPortrait) { font-size: 12px }
+  @include grid-media($breakLargescreen) { font-size: 14px }
+  @include grid-media($breakLargeerScreen) { font-size: 18px }
 }
 
 //-------------------------------------
@@ -49,8 +49,8 @@ h1 {
   text-align: center;
   padding: .5em 0;
 
-  @include media($breakTabletPortrait) { font-size: 2em }
-  @include media($breakTabletLandscape) { font-size: 1.8em }
+  @include grid-media($breakTabletPortrait) { font-size: 2em }
+  @include grid-media($breakTabletLandscape) { font-size: 1.8em }
 }
 
 h2 {

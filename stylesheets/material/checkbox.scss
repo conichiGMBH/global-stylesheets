@@ -2,15 +2,16 @@ conichi-checkbox,
 conichi-checkbox-group {
   .checkbox {
     @include position(relative, 0 null null 2.5em);
-    @include size(auto 2em);
+    @include size(auto, 2em);
     text-transform: uppercase;
     cursor: pointer;
     display: block;
 
     &:before {
-      @include transition(all .1s ease);
       @include position (absolute, -.15em null null -2em);
       @include size(1.4em);
+      transition: all .1s ease;
+      -webkit-transition: all .1s ease;
       transform-origin: center center;
       border: 2px solid $colorGenericGrey;
       border-radius: 5px;

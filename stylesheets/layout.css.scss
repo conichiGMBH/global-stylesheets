@@ -12,19 +12,17 @@ body {
 .inner-container { @extend %inner-container }
 
 .half {
-  @include span-columns(12 of 12);
+  @include grid-column(12);
 
-  @include media($breakTabletLandscape) {
-    @include span-columns(6 of 12);
-    @include omega(2n);
-  }
+  @include grid-media($breakTabletLandscape) { @include grid-column(6) }
 
   &:after { clear: both }
 }
 
-app-root + .loading-screen {
-  @include transition(opacity .2s ease-in-out .6s);
+app-root + .loading-screen {  
   @include position(fixed, 0 0 0 0);
+  transition: opacity .2s ease-in-out .6s;
+  -webkit-transition: opacity .2s ease-in-out .6s;
   background: $colorBackground;
   pointer-events: none;
   z-index: 9999999999999;
@@ -33,7 +31,7 @@ app-root + .loading-screen {
   img {
     @include position(absolute, 50% 50% null null);
     animation: grow 10s  linear 10ms infinite;
-    @include size(15em auto);
+    width: 15em;
     margin: -4em -7.5em 0 0;
   }
 }

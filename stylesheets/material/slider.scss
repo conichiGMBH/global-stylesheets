@@ -3,15 +3,20 @@ conichi-slider {
     width: 100%;
 
     input {
-      @include transition(opacity .2s ease-in-out);
-      @include appearance(none);
-      @include size(100% 1px);
+      @include size(100%, 1px);
+      -webkit-appearance: none;
+      -moz-appearance:    none;
+      appearance:         none;
+      transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
       background: transparent;
       outline: none;
 
       &::-webkit-slider-thumb {
-        @include appearance(none);
         @include size(1.5em);
+        -webkit-appearance: none;
+        -moz-appearance:    none;
+        appearance:         none;
         border-radius: 50%;
         background: $colorPrimaryCorp;
         cursor: pointer;
@@ -27,7 +32,7 @@ conichi-slider {
 
       &::-webkit-slider-runnable-track {
         @include position(relative, .5em null null null);
-        @include size(100% 2px);
+        @include size(100%, 2px);
         background: $colorSecondaryCorp;
         border-radius: 2px;
         cursor: pointer;
@@ -35,7 +40,7 @@ conichi-slider {
 
       &::-moz-range-track {
         @include position(relative, .5em null null null);
-        @include size(100% 2px);
+        @include size(100%, 2px);
         background: $colorSecondaryCorp;
         border-radius: 2px;
         cursor: pointer;
@@ -43,13 +48,13 @@ conichi-slider {
 
       &::-ms-track {
         @include position(relative, .5em null null null);
-        @include size(100% 2px);
+        @include size(100%, 2px);
         background: $colorSecondaryCorp;
         border-radius: 2px;
         cursor: pointer;
       }
     }
-    
+
     .output {
       float: right;
       margin-top: -1.5em;

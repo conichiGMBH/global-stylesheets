@@ -7,14 +7,16 @@ conichi-text {
 
     label {
       @include position(absolute, .2em null null 0);
-      @include transition(all 0.2s ease);
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
       font-size: .7em;
       color: $colorMediumGrey; 
       pointer-events: none;
     }
 
     input {
-      @include transition(all 0.2s ease);
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
       background: transparent;
       color: $colorDarkGrey; 
       font-size: 1em;
@@ -51,7 +53,7 @@ conichi-text {
 
         &.char { opacity: 1 }
         &.carat {
-          @include animation(blink 1s ease infinite);
+          animation: blink 1s ease infinite;
           @include position(relative, -1px null null null);
         }
       }
@@ -59,7 +61,7 @@ conichi-text {
 
     .view-password {
       @include position(absolute, null 0 0 null);
-      @include size(1.2em 1.6em);
+      @include size(1.2em, 1.6em);
       cursor: pointer;
     }
   }

@@ -1,8 +1,8 @@
 // Import all global stylesheets
 
-@import './bourbon/bourbon';
-@import './neat/neat';
-@import './vendor/animate';
+@import 'bourbon.scss';
+@import 'neat.scss'; 
+// @import url('./vendor/animate.css');
 
 // Global styles
 @import './stylesheets/colors.css.scss';

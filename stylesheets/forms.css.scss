@@ -2,7 +2,8 @@
 // Styleguide 1.0.
 
 label {
-  @include transition(color .2s);
+  transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
   display: block;
   margin-bottom: 1px;
   font-size: 1em;

@@ -6,7 +6,7 @@ conichi-modal {
   modal-container {
     @include position(absolute, 50% 50% null null);
     transform: translate(50%, -50%);
-    @include size(90% auto);
+    width: 90%;
     background: $colorOffWhite;
     color: $colorDarkGrey;
     border-radius: 5px;
@@ -15,7 +15,7 @@ conichi-modal {
     max-height: 90%;
     overflow: scroll;
     
-    @include media($breakTabletLandscape) { @include size(40% auto) }
+    @include grid-media($breakTabletLandscape) { width: 40% }
   }
 
   modal-content {

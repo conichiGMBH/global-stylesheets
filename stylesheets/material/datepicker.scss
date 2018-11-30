@@ -12,7 +12,8 @@ conichi-datepicker {
 
     label {
       @include position(absolute, .6em null null 0);
-      @include transition(all 0.2s ease);
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
       font-size: .7em;
       color: $colorMediumGrey; 
       pointer-events: none;
@@ -57,8 +58,7 @@ conichi-datepicker {
     }
 
     .days, .weekday {
-      @include span-columns(1 of 7);
-      @include omega(7n);
+      @include grid-column(1);
       text-align: center;
     }
 

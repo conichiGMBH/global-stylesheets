@@ -7,7 +7,8 @@ conichi-select {
     
     label {
       @include position(absolute, .8em null null 0);
-      @include transition(all 0.2s ease);
+      transition: all .2s ease;
+      -webkit-transition: all .2s ease;
       font-size: .7em;
       color: $colorMediumGrey; 
       pointer-events: none;

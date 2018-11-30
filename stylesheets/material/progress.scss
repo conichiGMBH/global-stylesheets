@@ -29,7 +29,7 @@ conichi-progress {
 
       &:after {
         @include position(absolute, .9em null null -50%);
-        @include size(100% 2px);
+        @include size(100%, 2px);
         content: '';
         background: $colorPrimaryCorp;
         z-index: 1;

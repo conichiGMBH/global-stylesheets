@@ -18,14 +18,16 @@ svg { fill: transparent }
 a { text-decoration: none }
 
 p a {
-  @include transition(all .2s);
+  transition: all .5s ease-in-out;
+  -webkit-transition: all .5s ease-in-out;
   text-decoration: underline;
   color: $colorMediumBlue;
 
   &:hover,
   &:active,
   &:focus {
-    @include transition(all .2s);
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
     color: $colorMediumBlue;
   }
 }

@@ -1,6 +1,7 @@
 conichi-sidebar {
   @include position(fixed, 0 null 0 -22em);
-  @include transition(all .3s ease-in-out);
+  transition: all .3s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
   border-right: 1px solid $colorMediumGrey;
   background: #565D64;
   width: 22em;
@@ -19,15 +20,17 @@ conichi-sidebar {
 
   .toggle {
     @include position(absolute, 1.3em -3em null null);
-    @include transition(all .7s ease);
+    transition: all .7s ease;
+    -webkit-transition: all .7s ease;
     cursor: pointer;
     display: block;
 
-    @include media($breakTabletLandscape) { display: none }
+    @include grid-media($breakTabletLandscape) { display: none }
 
     .bar {
-      @include transition(all .7s ease);
-      @include size(1.5em 2px);
+      @include size(1.5em, 2px);
+      transition: all .7s ease;
+      -webkit-transition: all .7s ease;
       display: block;
       background: $colorDarkGrey;
       margin: 4px auto;
@@ -46,22 +49,22 @@ conichi-sidebar {
 
     .toggle {
       display: block;
-      @include media($breakTabletLandscape) { display: none }
+      @include grid-media($breakTabletLandscape) { display: none }
 
       .bar {
-        @include size(1.8em 3px);
+        @include size(1.8em, 3px);
         background-color: $colorPrimaryCorp;
       }
 
-      .top { @include transform(translateY(7px) rotateZ(45deg)) }
+      .top { transform: translateY(7px) rotateZ(45deg) }
 
-      .bottom { @include transform(translateY(-7px) rotateZ(-45deg)) }
+      .bottom { transform: translateY(-7px) rotateZ(-45deg) }
 
       .middle { width: 0 }
     }
 
     + conichi-sidebar-content app-footer {
-      @include media($breakTabletLandscape) { @include position(fixed, null 0 0 22em) }
+      @include grid-media($breakTabletLandscape) { @include position(fixed, null 0 0 22em) }
     }
   }
 
@@ -113,13 +116,14 @@ conichi-sidebar {
 
 conichi-sidebar-content {
   @include position(fixed, 0 0 0 0);
-  @include transition(all .3s ease-in-out);
+  transition: all .1s ease;
+  -webkit-transition: all .3s ease-in-out;
   background: $colorBackground;
   -ms-overflow-style: scrollbar;
   overflow-y: scroll;
   margin-left: 0;
 
-  @include media($breakTabletLandscape) { margin-left: 22em }
+  @include grid-media($breakTabletLandscape) { margin-left: 22em }
 }
 
 conichi-sidebar-user {

@@ -28,12 +28,11 @@ conichi-reservation {
       vertical-align: top;
 
       .column {
-        @include span-columns(12 of 12);
-        @include omega-reset(2n);
+        @include grid-column(12);
         padding: 0;
         
-        @include media($breakTabletPortrait) {
-          @include span-columns(6 of 12);
+        @include grid-media($breakTabletPortrait) {
+          @include grid-column(6);
           padding-right: 1em;
         }
       }

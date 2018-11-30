@@ -1,10 +1,7 @@
 conichi-notification {
   .error, .success,  {
     @include position(fixed, 0 50% null null);
-    @include animation-name(fadeOut);
-    @include animation-fill-mode(forwards);
-    @include animation-duration(1s);  
-    @include animation-delay(2s);
+    animation: 1s fadeOut forwards 2s;
     width: 30em;
     margin-right: -15em;
     border-bottom-right-radius: 3px;
@@ -25,7 +22,7 @@ conichi-notification {
     border: 1px solid $colorSuccessGreen;
   }
 
-  @include keyframes(fadeOut) {
+  @keyframes fadeOut {
     from { opacity: 1 }
     to { opacity: 0 }
   }
