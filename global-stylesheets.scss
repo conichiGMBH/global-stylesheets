@@ -1,7 +1,7 @@
 // Import all global stylesheets
 
-@import '_bourbon';
-@import '_neat'; 
+@import 'node_modules/bourbon/core/_bourbon';
+@import 'node_modules/bourbon-neat/core/_neat'; 
 // @import url('./vendor/animate.css');
 
 // Global styles
