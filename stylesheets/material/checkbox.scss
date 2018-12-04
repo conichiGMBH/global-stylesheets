@@ -2,13 +2,17 @@ conichi-checkbox,
 conichi-checkbox-group {
   .checkbox {
     @include position(relative, 0 null null 2.5em);
-    @include size(auto, 2em);
     text-transform: uppercase;
     cursor: pointer;
-    display: block;
+    margin: 1em 0;
+
+    p {
+      line-height: 1.4em;
+      margin: 0;
+    }
 
     &:before {
-      @include position (absolute, -.15em null null -2em);
+      @include position (absolute, -.2em null null -2.5em);
       @include size(1.4em);
       transition: all .1s ease;
       -webkit-transition: all .1s ease;
@@ -18,21 +22,19 @@ conichi-checkbox-group {
       content: '';
     }
 
+    fa-icon {
+      @include position(absolute, 0 null null -2.1em);
+      color: $colorOffWhite;
+      display: none;
+    }
+
     &.checked {
-      fa {
-        display: block;
-        color: $colorOffWhite;
-      }
+      fa-icon { display: block }
 
       &:before {
         border: 2px solid $colorPrimaryCorp;
         background: $colorPrimaryCorp;
       }
-    }
-
-    fa {
-      @include position(absolute, 0 null null -1.8em);
-      display: none;
     }
   }
 }

@@ -24,8 +24,6 @@ conichi-text {
       border: none;
       border-bottom: 2px solid $colorDarkGrey;
       outline: none;
-      
-      &.masked::selection { background: transparent }
 
       &:active,
       &:focus {
@@ -36,27 +34,6 @@ conichi-text {
 
       &:active + label,
       &:focus + label { color: $colorPrimaryCorp }
-
-      &:active + .mask-container .input-mask .carat, { border-right: 1px solid $colorDarkGrey; }
-      &:focus + .mask-container .input-mask .carat { border-right: 1px solid $colorDarkGrey; }
-    }
-
-    .mask-container {
-      @include position(absolute, null 0 .3em 0);
-      background: $colorBackground;
-      pointer-events: none;
-
-      .input-mask span {
-        position: relative;
-        opacity: .5;
-        z-index: 9999;
-
-        &.char { opacity: 1 }
-        &.carat {
-          animation: blink 1s ease infinite;
-          @include position(relative, -1px null null null);
-        }
-      }
     }
 
     .view-password {
@@ -64,11 +41,5 @@ conichi-text {
       @include size(1.2em, 1.6em);
       cursor: pointer;
     }
-  }
-
-  @keyframes blink{
-    0%{ opacity: 0; }
-    50%{ opacity: 1; }
-    100%{ opacity: 0; }
   }
 }

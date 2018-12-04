@@ -8,6 +8,7 @@ conichi-notice {
     margin: 2em 0 3em;
 
     .notice-icon {
+      font-size: 2em;
       display: inline-block;
       color: black;
     }
@@ -15,7 +16,6 @@ conichi-notice {
     p {
       display: inline-block;
       vertical-align: top;
-      width: calc(100% - 2em);
       color: black;
       margin: .5em 0;
       padding: 0 1em;
