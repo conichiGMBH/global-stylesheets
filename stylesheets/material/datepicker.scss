@@ -2,8 +2,7 @@ conichi-datepicker {
   .input-container {
     position: relative;
     cursor: pointer;
-    height: 3.4em;
-    border-bottom: 2px solid $colorDarkGrey;
+    margin: .5em 0;
 
     .calendar {
       @include position(absolute, null .1em .6em null);
@@ -11,7 +10,7 @@ conichi-datepicker {
     }
 
     label {
-      @include position(absolute, .6em null null 0);
+      @include position(absolute, .2em null null 0);
       transition: all .2s ease;
       -webkit-transition: all .2s ease;
       font-size: .7em;
@@ -20,9 +19,9 @@ conichi-datepicker {
     }
 
     .value {
-      @include position(absolute, 0 0 0 0);
+      border-bottom: 2px solid $colorDarkGrey;
       text-transform: capitalize;
-      padding-top: 1.8em;
+      padding: 1.5em 0 0;
     }
   }
 

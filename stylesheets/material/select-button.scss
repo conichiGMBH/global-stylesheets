@@ -14,6 +14,7 @@ conichi-select-button {
       font-weight: normal;
       font-size: 1em;
       z-index: 9999;
+      min-width: 5em;
 
       &:after {
         @include position(absolute, 0 0 0 null);

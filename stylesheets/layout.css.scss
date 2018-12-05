@@ -11,10 +11,41 @@ body {
 .outer-container { @extend %outer-container }
 .inner-container { @extend %inner-container }
 
+.grid-container {
+  @include grid-container;
+  @include grid-collapse;
+  width: calc(100% + 2em);
+  margin: 0 -1em;
+}
+
+.full {
+  @include grid-column(12);
+
+  @include grid-media($breakTabletLandscape) { @include grid-column(12) }
+
+  &:after { clear: both }
+}
+
 .half {
   @include grid-column(12);
 
   @include grid-media($breakTabletLandscape) { @include grid-column(6) }
+
+  &:after { clear: both }
+}
+
+.third {
+  @include grid-column(12);
+
+  @include grid-media($breakTabletLandscape) { @include grid-column(4) }
+
+  &:after { clear: both }
+}
+
+.quarter {
+  @include grid-column(12);
+
+  @include grid-media($breakTabletLandscape) { @include grid-column(3) }
 
   &:after { clear: both }
 }
@@ -43,6 +74,6 @@ app-root:empty + .loading-screen { opacity: 1 }
 }
 
 @keyframes grow{
-  0% { transform:scale(1)}
-  50% { transform:scale(1.2)}
+  0% { transform: scale(1) }
+  50% { transform: scale(1.2) }
 }

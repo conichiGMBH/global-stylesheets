@@ -23,9 +23,9 @@ $fg-gutter: $gutter;
 // Breakpoints
 //-------------------------------------
 
-$breakPhonePortrait: (columns: 12, gutter: 0, media: "screen and (min-width: 321px)");
-$breakTabletPortrait: (columns: 12, gutter: 0, media: "screen and (min-width: 481px)");
-$breakTabletLandscape: (columns: 12, gutter: 0, media: "screen and (min-width: 769px)");
-$breakDesktop: (columns: 12, gutter: 0, media: "screen and (min-width: 1025px)");
-$breakLargescreen: (columns: 12, gutter: 0, media: "screen and (min-width: 1200px)");
-$breakLargeerScreen: (columns: 12, gutter: 0, media: "screen and (min-width: 1800px)");
+$breakPhonePortrait: (columns: 12, gutter: 1em, media: "screen and (min-width: 321px)");
+$breakTabletPortrait: (columns: 12, gutter: 1em, media: "screen and (min-width: 481px)");
+$breakTabletLandscape: (columns: 12, gutter: 1em, media: "screen and (min-width: 769px)");
+$breakDesktop: (columns: 12, gutter: 1em, media: "screen and (min-width: 1025px)");
+$breakLargescreen: (columns: 12, gutter: 1em, media: "screen and (min-width: 1200px)");
+$breakLargeerScreen: (columns: 12, gutter: 1em, media: "screen and (min-width: 1800px)");

@@ -69,7 +69,6 @@
   cursor: pointer;
   min-width: 10em;
   display: block;
-  width: 100%;
   outline: none;
   font-weight: 600;
   margin: .5em 0;
@@ -91,7 +90,12 @@
     @include grid-media($breakTabletPortrait) { float: right }
   }
 
-  &.smaller { @include grid-media($breakTabletPortrait) { width: auto } }
+  &.smaller {
+    @include grid-media($breakTabletPortrait) {
+      min-width: auto;
+      width: auto;
+    }
+  }
 
   &.outline {
     border: 1px solid $colorPrimaryCorp;

@@ -2,11 +2,12 @@ conichi-select {
   .container {
     position: relative;
     cursor: pointer;
-    height: 3.4em;
+    margin: .5em 0;
     border-bottom: 2px solid $colorDarkGrey;
+    height: 2.75em;
     
     label {
-      @include position(absolute, .8em null null 0);
+      @include position(absolute, .2em null null 0);
       transition: all .2s ease;
       -webkit-transition: all .2s ease;
       font-size: .7em;
@@ -22,12 +23,10 @@ conichi-select {
       border: none;
       cursor: pointer;
       text-indent: -100000em;
-      height: 4.5em;
     }
     
     .display-value {
-      @include position(absolute, 0 0 0 0);
-      padding-top: 2em;
+      padding: 1.5em 0 0 0;
     }
     
     .dropdown-arrow {
@@ -42,7 +41,7 @@ conichi-select {
     }
 
     .dropdown-box {
-      @include position(absolute, 3.4em 0 null 0);
+      @include position(absolute, 3em 0 null 0);
       box-shadow: 0 3px 6px rgba(0, 0, 0, .1), 0 3px 6px rgba(0, 0, 0, .2);
       background: $colorOffWhite;
       max-height: 20em;
