@@ -22,14 +22,14 @@ conichi-checkbox-group {
       content: '';
     }
 
-    fa-icon {
+    i {
       @include position(absolute, 0 null null -2.1em);
       color: $colorOffWhite;
       display: none;
     }
 
     &.checked {
-      fa-icon { display: block }
+      i { display: block }
 
       &:before {
         border: 2px solid $colorPrimaryCorp;
