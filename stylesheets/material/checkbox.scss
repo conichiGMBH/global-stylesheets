@@ -23,7 +23,7 @@ conichi-checkbox-group {
     }
 
     i {
-      @include position(absolute, 0 null null -2.1em);
+      @include position(absolute, .2em null null -2.1em);
       color: $colorOffWhite;
       display: none;
     }
