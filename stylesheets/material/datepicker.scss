@@ -54,17 +54,26 @@ conichi-datepicker {
           margin: 0 !important;
           box-shadow: none;
         }
+
+        &.month-selection {
+          .button {
+            padding: .6em 2em .5em 0;
+            &::after { border: none }
+          }
+        }
       }
     }
 
     .days, .weekday {
-      @include grid-column(1);
+      @include grid-column(1.7);
       text-align: center;
     }
 
     .days {
+      @include grid-column(1.7);
       border-radius: 5px;
-      padding: .7em 0;
+      text-align: center;
+      padding: .5em 0;
       cursor: pointer;
 
       &:hover { background: $colorLightGrey }
