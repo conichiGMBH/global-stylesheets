@@ -4,7 +4,7 @@ conichi-select {
     cursor: pointer;
     margin: .5em 0;
     border-bottom: 2px solid $colorDarkGrey;
-    height: 2.7em;
+    height: 2.65em;
     
     label {
       @include position(absolute, .2em null null 0);
@@ -25,9 +25,7 @@ conichi-select {
       text-indent: -100000em;
     }
     
-    .display-value {
-      padding: 1.5em 0 0 0;
-    }
+    .display-value { padding: 1.5em 0 0 0 }
     
     .dropdown-arrow {
       @include position(absolute, null .2em .5em null);
