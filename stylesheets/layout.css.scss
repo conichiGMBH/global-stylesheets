@@ -50,7 +50,7 @@ body {
   &:after { clear: both }
 }
 
-app-root + .loading-screen {  
+app-root + .loading-screen {
   @include position(fixed, 0 0 0 0);
   transition: opacity .2s ease-in-out .6s;
   -webkit-transition: opacity .2s ease-in-out .6s;
@@ -61,7 +61,7 @@ app-root + .loading-screen {
 
   img {
     @include position(absolute, 50% 50% null null);
-    animation: grow 10s  linear 10ms infinite;
+    @include pulse ($duration: 2s, $function: ease, $fill: both);
     width: 15em;
     margin: -4em -7.5em 0 0;
   }
@@ -69,11 +69,6 @@ app-root + .loading-screen {
 
 app-root:empty + .loading-screen { opacity: 1 }
 
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
   app-root + .loading-screen { display: none }
-}
-
-@keyframes grow{
-  0% { transform: scale(1) }
-  50% { transform: scale(1.2) }
 }
