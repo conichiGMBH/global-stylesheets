@@ -7,15 +7,38 @@ body {
   padding: 0;
 }
 
-.screen-container { @extend %screen-container }
-.outer-container { @extend %outer-container }
-.inner-container { @extend %inner-container }
+.screen-container {
+  @extend %screen-container
+}
+
+.outer-container {
+  @extend %outer-container
+}
+
+.inner-container {
+  @extend %inner-container
+}
 
 .grid-container {
   @include grid-container;
   @include grid-collapse;
   width: calc(100% + 2em);
-  margin: 0 -1em;
+
+  @include grid-media($breakTabletLandscape) {
+    margin: 0 -1em;
+  }
+}
+
+.details {
+  .grid-container {
+    @include grid-container;
+    @include grid-collapse;
+    width: calc(100% + 2em);
+
+    @include grid-media($breakTabletPortrait) {
+      margin: 0 -1em;
+    }
+  }
 }
 
 .column {
@@ -33,36 +56,52 @@ body {
 .full {
   @include grid-column(12);
 
-  @include grid-media($breakTabletLandscape) { @include grid-column(12) }
+  @include grid-media($breakTabletLandscape) {
+    @include grid-column(12)
+  }
 
-  &:after { clear: both }
+  &:after {
+    clear: both
+  }
 }
 
 .half {
   @include grid-column(12);
 
-  @include grid-media($breakTabletLandscape) { @include grid-column(6) }
+  @include grid-media($breakTabletLandscape) {
+    @include grid-column(6)
+  }
 
-  &:after { clear: both }
+  &:after {
+    clear: both
+  }
 }
 
 .third {
   @include grid-column(12);
 
-  @include grid-media($breakTabletLandscape) { @include grid-column(4) }
+  @include grid-media($breakTabletLandscape) {
+    @include grid-column(4)
+  }
 
-  &:after { clear: both }
+  &:after {
+    clear: both
+  }
 }
 
 .quarter {
   @include grid-column(12);
 
-  @include grid-media($breakTabletLandscape) { @include grid-column(3) }
+  @include grid-media($breakTabletLandscape) {
+    @include grid-column(3)
+  }
 
-  &:after { clear: both }
+  &:after {
+    clear: both
+  }
 }
 
-app-root + .loading-screen {
+app-root+.loading-screen {
   @include position(fixed, 0 0 0 0);
   transition: opacity .2s ease-in-out .6s;
   -webkit-transition: opacity .2s ease-in-out .6s;
@@ -79,8 +118,13 @@ app-root + .loading-screen {
   }
 }
 
-app-root:empty + .loading-screen { opacity: 1 }
+app-root:empty+.loading-screen {
+  opacity: 1
+}
 
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  app-root + .loading-screen { display: none }
+@media screen and (-ms-high-contrast: active),
+screen and (-ms-high-contrast: none) {
+  app-root+.loading-screen {
+    display: none
+  }
 }
