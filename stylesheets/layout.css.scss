@@ -18,6 +18,14 @@ body {
   margin: 0 -1em;
 }
 
+.column {
+  margin-left: 1em;
+}
+
+.details-container {
+  margin-left: 1em;
+}
+
 .full {
   @include grid-column(12);
 
