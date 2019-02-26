@@ -5,16 +5,16 @@ conichi-select {
     margin: .5em 0;
     border-bottom: 2px solid $colorDarkGrey;
     height: 2.65em;
-    
+
     label {
       @include position(absolute, .2em null null 0);
       transition: all .2s ease;
       -webkit-transition: all .2s ease;
       font-size: .7em;
-      color: $colorMediumGrey; 
+      color: $colorMediumGrey;
       pointer-events: none;
     }
-    
+
     input {
       @include position(absolute, 0 1000em -.2em 0);
       color: transparent;
@@ -23,18 +23,22 @@ conichi-select {
       border: none;
       cursor: pointer;
       text-indent: -100000em;
+      &:focus {
+        border: none;
+        background: none;
+      }
     }
-    
+
     .display-value { padding: 1.5em 0 0 0 }
-    
+
     .dropdown-arrow {
       @include position(absolute, null .2em .5em null);
       color: $colorDarkGrey;
     }
-    
+
     &.active {
       border-bottom: 2px solid $colorPrimaryCorp;
-      
+
       label { color: $colorPrimaryCorp }
     }
 
