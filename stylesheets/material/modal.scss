@@ -5,6 +5,7 @@ conichi-modal {
 
   modal-container {
     @include position(absolute, 50% 50% null null);
+    @include fadeIn($duration: .3s, $function: ease-in);
     transform: translate(50%, -50%);
     width: 90%;
     background: $colorBackground;
@@ -13,20 +14,20 @@ conichi-modal {
     z-index: 999999999;
     max-width: 40em;
     max-height: 90%;
-    overflow: scroll;
-    
-    @include grid-media($breakTabletLandscape) { width: 40% }
+    overflow: auto;
+
+    @include grid-media($breakDesktop) { width: 40% }
   }
 
   modal-content {
     display: block;
     padding: 2em 1.5em 1em;
-    
+
     h1 {
       color: $colorPrimaryCorp;
       text-align: left;
     }
-    
+
     h3 { margin: 1.5em 0 .5em }
 
     h2, h3, p {
@@ -61,7 +62,7 @@ conichi-modal {
         font-weight: normal;
         min-width: unset;
         border-radius: 3px;
-        
+
         @include grid-media($breakTabletLandscape) { min-width: 8em }
 
         &.confirm { float: right }
