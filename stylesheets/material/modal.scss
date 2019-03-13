@@ -42,7 +42,7 @@ conichi-modal {
       color: $colorPrimaryCorp;
       text-align: center;
       text-transform: uppercase;
-      color: aliceblue;
+      color: #000;
       font-size: 0.9em;
     }
 
@@ -97,8 +97,8 @@ conichi-modal {
         font-weight: normal;
         min-width: 100px;
         border-radius: 50px;
-        border: 1px solid $colorModalDefault;
-        background-color: $colorModalDefault;
+        border: 1px solid $colorModalButton;
+        background-color: $colorModalButton;
 
         @include grid-media($breakTabletLandscape) {
           min-width: 8em;
@@ -110,8 +110,8 @@ conichi-modal {
 
         &.cancel {
           // float: left;
-          border: 1px solid $colorModalDefault;
-          color: $colorModalDefault !important;
+          border: 1px solid $colorModalButton;
+          color: $colorModalButton !important;
           background-color: transparent;
 
           &:hover {
