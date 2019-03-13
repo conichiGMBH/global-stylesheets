@@ -59,7 +59,6 @@ conichi-modal {
     h2,
     h3,
     p {
-      // color: $colorDarkGrey;
       text-align: center;
     }
     p {
@@ -87,9 +86,6 @@ conichi-modal {
     }
 
     .prompt {
-      // background: $colorSoftBlue;
-      // border-top: 1px solid $colorLightGrey;
-
       .button {
         padding: 9px 20px 8px;
         margin: 0.8em 1em;
@@ -104,12 +100,7 @@ conichi-modal {
           min-width: 8em;
         }
 
-        // &.confirm {
-        //   // float: right
-        // }
-
         &.cancel {
-          // float: left;
           border: 1px solid $colorModalButton;
           color: $colorModalButton !important;
           background-color: transparent;
